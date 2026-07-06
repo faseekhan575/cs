@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="NEW-PROJECT.CSS">
+
+</head>
+<style>
+    .zephyrNest {
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.85);
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+    }
+
+    .lunarGlow {
+        color: #00ff00;
+        font-size: 1.8em;
+        margin-bottom: 10px;
+        text-shadow: 0 0 8px #00ff00;
+    }
+
+    .cosmicWhisper {
+        color: #a9a9a9;
+        font-size: 0.9em;
+        margin-bottom: 15px;
+    }
+
+    .nebulaCluster {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .stellarPulse {
+        background: linear-gradient(45deg, #ffffff 0%, #e0e0e0 100%);
+        color: #1a1a1a;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 15px;
+        font-size: 0.9em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .stellarPulse:hover {
+        transform: scale(1.1) translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0, 255, 0, 0.5);
+    }
+
+    .galacticCore {
+        background: linear-gradient(45deg, #00ff00 0%, #00cc00 100%);
+        color: #fff;
+        font-size: 1em;
+        padding: 9px 18px;
+    }
+
+    .galacticCore:hover {
+        background: linear-gradient(45deg, #00cc00 0%, #009900 100%);
+        transform: scale(1.15) translateY(-3px);
+        box-shadow: 0 8px 15px rgba(0, 255, 0, 0.6);
+    }
+
+    .stellarPulse:active {
+        background: #00ff00;
+        color: #1a1a1a;
+        transform: scale(1.0) translateY(0);
+        box-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+    }
+
+    .stellarPulse.clicked {
+        background: #00ff00;
+        color: #1a1a1a;
+        box-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+    }
+
+    .stellarPulse:not(.clicked):active {
+        background: #ffffff;
+        color: #1a1a1a;
+    }
+
+    .productss {
+
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .productss {
+
+     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .image11 {
+        width: 100%;
+        height: 160px;
+        background: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center;
+        background-size: cover;
+        position: relative;
+    }
+    
+</style>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <a class="loll"
+                href="https://wa.me/923278890579?text=HEY%20I%20AM%20THE%20DEVELOPER%20OF%20KLEENORA%20IF%20YOU%20NEED%20ANY%20WEBSITE%20FOR%20YOUR%20BUSINESS%20JUST%20LEAVE%20ME%20A%20MESSAGE">
+                <li><img class="nav-2" src="pic-15.jpg" alt=""></li>
+            </a>
+            <li><img class="nav-1 w00" src="pic-12.jpg" alt=""></li>
+            <a class="loll" href="./index.html">
+                <li class="whites w00">home</li>
+            </a>
+            <li><img class="nav-1 loll " src="pic-13.png" alt=""></li>
+            <a class="loll" href="./NEW-PRODUCTS.HTML">
+                <li class="whites ">products</li>
+            </a>
+            <li><img class="nav-1 loll w00" src="pi-13.jpg" alt="" srcset=""></li>
+            <a class="loll" href="./NEW-ABOUT.HTML">
+                <li class="whites w00 ">about</li>
+            </a>
+            <li><img class="nav-1 loll w00" src="pic-14.jpg" alt="" srcset=""></li>
+            <a class="loll nn3" href="./NEW-CONTACT.HTML">
+                <li class="whites nn w00">contact us</li>
+            </a>
+            <img class="nav-4"
+                    src="https://png.pngtree.com/element_our/20190531/ourmid/pngtree-shopping-cart-convenient-icon-image_1287807.jpg"
+                    alt="">
+
+
+                    <div class="lol-hamburger" onclick="toggleSlideMenu()" tabindex="0" role="button" aria-label="Toggle navigation menu">
+        <img class="ham" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AAADPz89LS0uWlpb39/eCgoKQkJCxsbH29vZiYmI4ODh0dHTX19empqbFxcXr6+sQEBDh4eEbGxu7u7s0NDR6enpXV1egoKDJyclvb28ODg6IiIhcXFwfHx8ZGRnwNjATAAACZUlEQVR4nO3dCW7CMBCFYRdIw75vbSm9/y2rqKgUVRo72NJoxv93gveUkGBj7BAAAAAAAAAAAAAAAAAAoAKrdjq0Y9qu+tVbH1/sOa7TC7baYZ/UJvZrZtpJnzZrkgputHNm2KRUPGinzHKIF3zVzpjpNVZwq50w2zbScKodMNtULjjRzlfARGw41o5XwFhsONeOV8BcbGj3ZX83Extqpyui8oY77XQFXMWGJ+14BZzEhlbHTX/JY6iBdrwCFmJDD48auWBYaufLtow0NP803cUKhoV2xEyRT6H9+zR6j3bO2ikznFMKhrDSzvm05GnhxuYgap40l3izHlmbcpuNekx53y7kdmDHts/lAwAAAAAAAAAAxjRvy5Edy7e+P1zsh9q/JfU23PfoN7hqx33KdZBa0O5i9ugy9h+f2jkzfKYUfNdOmeU9XtD6Sm95lXfwsFhfXqofwkU7YLZLpKF2vgLkgnYXC93Jy4bsvgrv5JeivS9r/w3Fhh/a8QrYiA210xVR+TX0/zn0/yz1/z708KiRC1bwvdT+2CI6JeV+fFjBGL+CeRrLT5vEubYK5kuD/znvjvffLQAAAAAAAAAAgCHO94myt9fXoddeXxOj+7XFFkD/srtsKHHPPff7Jrrf+9L//qVf2hEzRfegtX2PdmL3qXa+AuSC/vfz9r8nu/999a3v5t2Rn6ba6YqovKH/c2ZsDpseyWcFWV/l3ZFXettfqh/9I7D7c9cqODvP/H+7EhazW5tke5RwhmVoLI+Bk84h9X+WbLA7hko9DzhUcKZzx/m53AAAAAAAAAAAAAAAAABg0zfn21Nf0tdOJAAAAABJRU5ErkJggg==" alt="Hamburger Icon">
+    </div>
+
+    <!-- Slide-in Navigation -->
+    <div class="lol-slide-menu" id="lolSlideMenu" role="navigation" aria-label="Main navigation" aria-expanded="false">
+        <ul class="lol-nav-list">
+            <li class="lol-nav-item" style="--item-index: 1;">
+                <img class="lol-nav-img lol-img-home" src="pic-12.jpg" alt="Home Icon">
+                <a class="lol-nav-link lol-home" href="./index.html">Home</a>
+            </li>
+            <li class="lol-nav-item" style="--item-index: 2;">
+                <img class="lol-nav-img lol-img-products" src="pic-13.png" alt="Products Icon">
+                <a class="lol-nav-link lol-products" href="./NEW-PRODUCTS.HTML">Products</a>
+            </li>
+            <li class="lol-nav-item" style="--item-index: 3;">
+                <img class="lol-nav-img lol-img-about" src="pi-13.jpg" alt="About Icon">
+                <a class="lol-nav-link lol-about" href="./NEW-ABOUT.HTML">About</a>
+            </li>
+            <li class="lol-nav-item" style="--item-index: 4;">
+                <img class="lol-nav-img lol-img-contact" src="pic-14.jpg" alt="Contact Icon">
+                <a class="lol-nav-link lol-contact" href="./NEW-CONTACT.HTML">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+           
+               
+                    <div class="numCircle">0</div>
+               
+          
+        </ul>
+       <div class="bestone">
+            <canvas id="CosmicSparkles"></canvas>
+            <div class="moeez">
+            <div class="QuantumCartBox" id="QuantumCartBox" role="dialog" aria-labelledby="NebulaMessage">
+                <button class="CelestialClose" onclick="closeQuantumCartBox()" aria-label="Close popup">✖</button>
+                <div class="AstralCheckIcon" aria-hidden="true">✔</div>
+                <div class="NebulaMessage" id="NebulaMessage">Item added to your cart</div>
+                <div class="StellarCartDetails">4 ITEMS IN THE CART ($692.95)</div>
+                <div class="CosmicButtonRow">
+                    <button class="OrbitAction LunarShop" onclick="continueLunarShop()">CONTINUE SHOPPING</button>
+                    <button class="OrbitAction GalacticCart" onclick="goToGalacticCart()">GO TO THE CART</button>
+                </div>
+                <div class="AstroShippingNote">Buy for $63.05 more and get free shipping</div>
+                <div class="NovaProgressTrack" role="progressbar" aria-valuenow="91.5" aria-valuemin="0"
+                    aria-valuemax="100">
+                    <div class="NovaProgressFill"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- ---------------paster -->
+        <div class="swipers">
+            <div class="top">
+                <!-- ---warp firts -->
+                <div class="cartBadge-custom">
+                    Shopping Cart (1)
+                    <span class="cartClose-custom nok">×</span>
+                </div>
+                <!-- ---------down one -->
+                <div class="endss">
+                    <div class="containeree">
+                        <div class="total">Total: Rs. 2,002</div>
+                        <a href=" NEW-CHECKOUT.HTML"> <button class="checkout-btn">Checkout</button></a>
+                    </div>
+                </div>
+                <!-- -----now -->
+                <div class="addwala-div">
+                    <div class="awe">
+                        <svg class="cart-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                        </svg>
+                        <p class="awe1">Your shopping cart is empty.</p>
+                    </div>
+                    <!-- <div class="carting">
+                        <div class="cont">
+                            <div class="side">
+                                <div class="image1">
+                                    <img class="rt"
+                                        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                        alt="" srcset="">
+
+                                </div>
+                                <div class="image2">
+                                    <h3 class="n21">marble cleaner</h3>
+                                    <h3 class="n23">RS 300</h3>
+                                    <div class="zephyrHub-unique">
+                                        <button class="nebulaPulse-unique">-</button>
+                                        <span class="lunarEcho-unique">1</span>
+                                        <button class="nebulaPulse-unique">+</button>
+                                        <button class="solarFlare-unique">×</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- ---------------copy -->
+                    <!-- <div class="carting">
+                        <div class="cont">
+                            <div class="side">
+                                <div class="image1">
+                                    <img class="rt"
+                                        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                        alt="" srcset="">
+
+                                </div>
+                                <div class="image2">
+                                    <h3 class="n21">marble cleaner</h3>
+                                    <h3 class="n23">RS 300</h3>
+                                    <div class="zephyrHub-unique">
+                                        <button class="nebulaPulse-unique">-</button>
+                                        <span class="lunarEcho-unique">1</span>
+                                        <button class="nebulaPulse-unique">+</button>
+                                        <button class="solarFlare-unique">×</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -------------------paste -->
+                    <!-- <div class="carting">
+                        <div class="cont">
+                            <div class="side">
+                                <div class="image1">
+                                    <img class="rt"
+                                        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                        alt="" srcset="">
+
+                                </div>
+                                <div class="image2">
+                                    <h3 class="n21">marble cleaner</h3>
+                                    <h3 class="n23">RS 300</h3>
+                                    <div class="zephyrHub-unique">
+                                        <button class="nebulaPulse-unique">-</button>
+                                        <span class="lunarEcho-unique">1</span>
+                                        <button class="nebulaPulse-unique">+</button>
+                                        <button class="solarFlare-unique">×</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- //bapp wala div -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="new122">
+        <a href="https://wa.me/923011231236?text=Hey%21%20What%20do%20you%20want%20to%20buy%20from%20Kellenora%3F%20Check%20out%20our%20products%3A%0A-%20All%20Products%20🌟%0A-%20Floor%20Care%20🧹%0A-%20House%2FOffice%2FSchool%20Care%20🏠%0A-%20Laundry%20Care%20🧺%0A-%20Kitchen%20Care%20🍳%0A-%20Toilet%20Care%20🚽%0A-%20Special%20Products%20🎉%0A-%20Personal%20Care%20🧴" class="whatsapp-btn"><img src="pic-17.png" alt="WhatsApp Icon"><span>Chat
+                with us</span></a>
+    </div>
+    <!-- ---------------------------add bro -->
+    <div class="productss">
+        <div class="zephyrNest">
+            <h1 class="lunarGlow">Our Products</h1>
+            <p class="cosmicWhisper">Discover our complete range of premium cleaning products</p>
+            <div class="nebulaCluster">
+                <a href="./NEW-PRODUCTS.HTML"><button class="stellarPulse lol">All Products (60)</button></a>
+                <a href="./NEW-PRODUCT1.HTML"><button class="stellarPulse lol100">Floor Care (7)</button></a>
+                <a href="./NEW-PRODUCT2.HTML"><button class="stellarPulse lol101">House/Office/School Care
+                        (12)</button></a>
+                <a href="./NEW-PRODUCT3.HTML"><button class="stellarPulse lol102">Laundry Care (14)</button></a>
+                <a href="./NEW-PRODUCT4.HTML"><button class="stellarPulse lol103">Kitchen Care (9)</button></a>
+                <a href="./NEW-PRODUCT5.HTML"> <button class="stellarPulse lol104">Toilet Care (9)</button></a>
+                <a href="./NEW-PRODUCT6.HTML"><button class="stellarPulse lol105">Special Products (5)</button></a>
+                <a href="./NEW-PRODUCT7.HTML"><button class="stellarPulse lol106">Personal Care (4)</button></a>
+            </div>
+        </div>
+    </div>
+   
+    <label>
+        <div class=" swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide abc ">
+
+                    <div class="product-card1 ">
+                        <div class="product-image2 w14 lol0" id="main-product-image15">
+                            <img class="product-img"
+                                src="https://images.pexels.com/photos/4239088/pexels-photo-4239088.jpeg?_gl=1*1tavbc*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTQ1OTAwOTgkbzckZzEkdDE3NTQ1OTAzODYkajU5JGwwJGgw"
+                                alt="">
+                            <div class="discount-tag3">20% Off</div>
+                            <a href=" NEW-DETAILS.HTML">
+                                <div class="eye-button4" data-indexs="0">👁️</div>
+                            </a>
+                            <div class="gallery5">
+                                <img class="w16"
+                                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                                <img class="w17"
+                                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                                <img class="w18"
+                                    src="https://images.pexels.com/photos/4239037/pexels-photo-4239037.jpeg?_gl=1*1th2blh*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY3MTQkajMzJGwwJGgw">
+                            </div>
+                            <!-- -------- -->
+                            <div class="ultra-hover-shield">
+                                <div class="elite-icon-cluster">
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="heart">❤️</div>
+                                    </a>
+                                    <div class="cart-hover">🛒</div>
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="view-hover" onclick="openModal()">👁️</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details6">
+                            <div class="brand7">KLEENORA</div>
+                            <div class="product-name8">ToiletCLEANER</div>
+                            <div class="rating9">★★★★☆ <span>(189)</span></div>
+                            <div class="price10">Rs. 999 <del>Rs. 499</del> <span class="save11">Save Rs. 100</span>
+                            </div>
+                            <ul class="features12">
+                                <li>toliet protection</li>
+                                <li>Gloss finish 1</li>
+                                <li>Non-toxic 1</li>
+                            </ul>
+                            <div class="mems" data-index12="0"></div>
+                            <button class="add-to-cart13 copy55">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card1">
+                        <div class="product-image2 w14 image11" id="main-product-image15">
+                            <img class="product-img"
+                                src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                alt="">
+                            <div class="discount-tag3">20% Off</div>
+                            <a href=" NEW-DETAILS.HTML">
+                                <div class="eye-button4" data-indexs="1">👁️</div>
+                            </a>
+                            <div class="gallery5">
+                                <img class="w16"
+                                    src="https://images.pexels.com/photos/4239035/pexels-photo-4239035.jpeg?_gl=1*ys34jl*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY4MTEkajU0JGwwJGgw">
+                                <img class="w17"
+                                    src="https://images.pexels.com/photos/4239035/pexels-photo-4239035.jpeg?_gl=1*ys34jl*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY4MTEkajU0JGwwJGgw">
+                                <img class="w18"
+                                    src="https://images.pexels.com/photos/4239037/pexels-photo-4239037.jpeg?_gl=1*1th2blh*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY3MTQkajMzJGwwJGgw">
+                            </div>
+                            <!-- -------- -->
+                            <div class="ultra-hover-shield">
+                                <div class="elite-icon-cluster">
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="heart">❤️</div>
+                                    </a>
+                                    <div class="cart-hover">🛒</div>
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="view-hover" onclick="openModal()">👁️</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details6">
+                            <div class="brand7">KLEENORA</div>
+                            <div class="product-name8">Mooez clean</div>
+                            <div class="rating9">★★★★☆ <span>(189)</span></div>
+                            <div class="price10">Rs. 799 <del>Rs. 499</del> <span class="save11">Save Rs. 100</span>
+                            </div>
+                            <ul class="features12">
+                                <li>Marble protection 2</li>
+                                <li>Gloss finish 2</li>
+                                <li>Non-toxic 2</li>
+                            </ul>
+                            <div class="mems" data-index12="1"></div>
+                            <button class="add-to-cart13 copy55" data-index12="1">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card1">
+                        <div class="product-image2 w14" id="main-product-image15">
+                            <img class="product-img"
+                                src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                alt="">
+                            <div class="discount-tag3">20% Off</div>
+                            <a href=" NEW-DETAILS.HTML">
+                                <div class="eye-button4 " data-indexs="2">👁️</div>
+                            </a>
+                            <div class="gallery5">
+                                <img class="w16"
+                                    src="https://images.pexels.com/photos/4239035/pexels-photo-4239035.jpeg?_gl=1*ys34jl*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY4MTEkajU0JGwwJGgw">
+                                <img class="w17"
+                                    src="https://images.pexels.com/photos/4239035/pexels-photo-4239035.jpeg?_gl=1*ys34jl*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY4MTEkajU0JGwwJGgw">
+                                <img class="w18"
+                                    src="https://images.pexels.com/photos/4239037/pexels-photo-4239037.jpeg?_gl=1*1th2blh*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY3MTQkajMzJGwwJGgw">
+                            </div>
+                            <!-- -------- -->
+                            <div class="ultra-hover-shield">
+                                <div class="elite-icon-cluster">
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="heart">❤️</div>
+                                    </a>
+                                    <div class="cart-hover">🛒</div>
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="view-hover" onclick="openModal()">👁️</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details6">
+                            <div class="brand7">KLEENORA</div>
+                            <div class="product-name8">Marble Wax</div>
+                            <div class="rating9">★★★★☆ <span>(189)</span></div>
+                            <div class="price10">Rs. 1000 <del>Rs. 499</del> <span class="save11">Save Rs. 100</span>
+                            </div>
+                            <ul class="features12">
+                                <li>Marble protection </li>
+                                <li>Gloss finish </li>
+                                <li>Non-toxic </li>
+                            </ul>
+                            <div class="mems" data-index12="2"></div>
+                            <button class="add-to-cart13 copy55">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card1">
+                        <div class="product-image2 w14" id="main-product-image15">
+                            <img class="product-img"
+                                src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                alt="">
+                            <div class="discount-tag3">20% Off</div>
+                            <a href=" NEW-DETAILS.HTML">
+                                <div class="eye-button4" data-indexs="3">👁️</div>
+                            </a>
+                            <div class="gallery5">
+                                <img class="w16"
+                                    src="https://images.pexels.com/photos/4239035/pexels-photo-4239035.jpeg?_gl=1*ys34jl*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY4MTEkajU0JGwwJGgw">
+                                <img class="w17"
+                                    src="https://images.pexels.com/photos/4239035/pexels-photo-4239035.jpeg?_gl=1*ys34jl*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY4MTEkajU0JGwwJGgw">
+                                <img class="w18"
+                                    src="https://images.pexels.com/photos/4239037/pexels-photo-4239037.jpeg?_gl=1*1th2blh*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY3MTQkajMzJGwwJGgw">
+                            </div>
+                            <!-- -------- -->
+                            <div class="ultra-hover-shield">
+                                <div class="elite-icon-cluster">
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="heart">❤️</div>
+                                    </a>
+                                    <div class="cart-hover">🛒</div>
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="view-hover" onclick="openModal()">👁️</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details6">
+                            <div class="brand7">KLEENORA</div>
+                            <div class="product-name8">Marble Shiner</div>
+                            <div class="rating9">★★★★☆ <span>(189)</span></div>
+                            <div class="price10">Rs. 399 <del>Rs. 350</del> <span class="save11">Save Rs. 100</span>
+                            </div>
+                            <ul class="features12">
+                                <li>Marble protection</li>
+                                <li>Gloss finish</li>
+                                <li>Non-toxic</li>
+                            </ul>
+                            <div class="mems" data-index12="3"></div>
+                            <button class="add-to-cart13" class="copy55">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card1">
+                        <div class="product-image2 w14" id="main-product-image15">
+                            <img class="product-img"
+                                src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                alt="">
+                            <div class="discount-tag3">20% Off</div>
+                            <a href=" NEW-DETAILS.HTML">
+                                <div class="eye-button4" data-indexs="4">👁️</div>
+                            </a>
+                            <div class="gallery5">
+                                <img class="w16"
+                                    src="https://images.pexels.com/photos/4239035/pexels-photo-4239035.jpeg?_gl=1*ys34jl*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY4MTEkajU0JGwwJGgw">
+                                <img class="w17"
+                                    src="https://images.pexels.com/photos/4239035/pexels-photo-4239035.jpeg?_gl=1*ys34jl*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY4MTEkajU0JGwwJGgw">
+                                <img class="w18"
+                                    src="https://images.pexels.com/photos/4239037/pexels-photo-4239037.jpeg?_gl=1*1th2blh*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY3MTQkajMzJGwwJGgw">
+                            </div>
+                            <!-- -------- -->
+                            <div class="ultra-hover-shield">
+                                <div class="elite-icon-cluster">
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="heart">❤️</div>
+                                    </a>
+                                    <div class="cart-hover">🛒</div>
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="view-hover" onclick="openModal()">👁️</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details6">
+                            <div class="brand7">KLEENORA</div>
+                            <div class="product-name8">Marble Wax </div>
+                            <div class="rating9">★★★★☆ <span>(189)</span></div>
+                            <div class="price10">Rs. 399 <del>Rs. 499</del> <span class="save11">Save Rs. 100</span>
+                            </div>
+                            <ul class="features12">
+                                <li>Marble protection</li>
+                                <li>Gloss finish</li>
+                                <li>Non-toxic</li>
+                            </ul>
+                            <div class="mems" data-index12="4"></div>
+                            <button class="add-to-cart13" class="copy55">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card1">
+                        <div class="product-image2 w14" id="main-product-image15">
+                            <img class="product-img"
+                                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                alt="">
+                            <div class="discount-tag3">20% Off</div>
+                            <a href=" NEW-DETAILS.HTML">
+                                <div class="eye-button4" data-indexs="5">👁️</div>
+                            </a>
+                            <div class="gallery5">
+                                <img class="w16"
+                                    src="https://images.pexels.com/photos/4239035/pexels-photo-4239035.jpeg?_gl=1*ys34jl*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY4MTEkajU0JGwwJGgw">
+                                <img class="w17"
+                                    src="https://images.pexels.com/photos/4239035/pexels-photo-4239035.jpeg?_gl=1*ys34jl*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY4MTEkajU0JGwwJGgw">
+                                <img class="w18"
+                                    src="https://images.pexels.com/photos/4239037/pexels-photo-4239037.jpeg?_gl=1*1th2blh*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY3MTQkajMzJGwwJGgw">
+                            </div>
+                            <!-- -------- -->
+                            <div class="ultra-hover-shield">
+                                <div class="elite-icon-cluster">
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="heart">❤️</div>
+                                    </a>
+                                    <div class="cart-hover">🛒</div>
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="view-hover" onclick="openModal()">👁️</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details6">
+                            <div class="brand7">KLEENORA</div>
+                            <div class="product-name8"> Wax Shiner</div>
+                            <div class="rating9">★★★★☆ <span>(189)</span></div>
+                            <div class="price10">Rs. 250 <del>Rs. 499</del> <span class="save11">Save Rs. 100</span>
+                            </div>
+                            <ul class="features12">
+                                <li>Marbless</li>
+                                <li>Gloss finish</li>
+                                <li>Non-toxic</li>
+                            </ul>
+                            <div class="mems" data-index12="5"></div>
+                            <button class="add-to-cart13" class="copy55">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" swiper-slide abc ">
+
+                    <div class="product-card1 ">
+                        <div class="product-image2 w14 lol0" id="main-product-image15">
+                            <img class="product-img"
+                                src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                alt="">
+                            <div class="discount-tag3">20% Off</div>
+                            <a href=" NEW-DETAILS.HTML">
+                                <div class="eye-button4" data-indexs="0">👁️</div>
+                            </a>
+                            <div class="gallery5">
+                                <img class="w16"
+                                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                                <img class="w17"
+                                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                                <img class="w18"
+                                    src="https://images.pexels.com/photos/4239037/pexels-photo-4239037.jpeg?_gl=1*1th2blh*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY3MTQkajMzJGwwJGgw">
+                            </div>
+                            <!-- -------- -->
+                            <div class="ultra-hover-shield">
+                                <div class="elite-icon-cluster">
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="heart">❤️</div>
+                                    </a>
+                                    <div class="cart-hover">🛒</div>
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="view-hover" onclick="openModal()">👁️</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details6">
+                            <div class="brand7">KLEENORA</div>
+                            <div class="product-name8">ToiletCLEANER</div>
+                            <div class="rating9">★★★★☆ <span>(189)</span></div>
+                            <div class="price10">Rs. 999 <del>Rs. 499</del> <span class="save11">Save Rs. 100</span>
+                            </div>
+                            <ul class="features12">
+                                <li>toliet protection</li>
+                                <li>Gloss finish 1</li>
+                                <li>Non-toxic 1</li>
+                            </ul>
+                            <div class="mems" data-index12="0"></div>
+                            <button class="add-to-cart13 copy55">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card1">
+                        <div class="product-image2 w14" id="main-product-image15">
+                            <img class="product-img"
+                                src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                alt="">
+                            <div class="discount-tag3">20% Off</div>
+                            <a href=" NEW-DETAILS.HTML">
+                                <div class="eye-button4" data-indexs="4">👁️</div>
+                            </a>
+                            <div class="gallery5">
+                                <img class="w16"
+                                    src="https://images.pexels.com/photos/4239035/pexels-photo-4239035.jpeg?_gl=1*ys34jl*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY4MTEkajU0JGwwJGgw">
+                                <img class="w17"
+                                    src="https://images.pexels.com/photos/4239035/pexels-photo-4239035.jpeg?_gl=1*ys34jl*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY4MTEkajU0JGwwJGgw">
+                                <img class="w18"
+                                    src="https://images.pexels.com/photos/4239037/pexels-photo-4239037.jpeg?_gl=1*1th2blh*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY3MTQkajMzJGwwJGgw">
+                            </div>
+                            <!-- -------- -->
+                            <div class="ultra-hover-shield">
+                                <div class="elite-icon-cluster">
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="heart">❤️</div>
+                                    </a>
+                                    <div class="cart-hover">🛒</div>
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="view-hover" onclick="openModal()">👁️</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details6">
+                            <div class="brand7">KLEENORA</div>
+                            <div class="product-name8">Marble Wax </div>
+                            <div class="rating9">★★★★☆ <span>(189)</span></div>
+                            <div class="price10">Rs. 399 <del>Rs. 499</del> <span class="save11">Save Rs. 100</span>
+                            </div>
+                            <ul class="features12">
+                                <li>Marble protection</li>
+                                <li>Gloss finish</li>
+                                <li>Non-toxic</li>
+                            </ul>
+                            <div class="mems" data-index12="4"></div>
+                            <button class="add-to-cart13" class="copy55">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card1">
+                        <div class="product-image2 w14" id="main-product-image15">
+                            <img class="product-img"
+                                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                alt="">
+                            <div class="discount-tag3">20% Off</div>
+                            <a href=" NEW-DETAILS.HTML">
+                                <div class="eye-button4" data-indexs="5">👁️</div>
+                            </a>
+                            <div class="gallery5">
+                                <img class="w16"
+                                    src="https://images.pexels.com/photos/4239035/pexels-photo-4239035.jpeg?_gl=1*ys34jl*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY4MTEkajU0JGwwJGgw">
+                                <img class="w17"
+                                    src="https://images.pexels.com/photos/4239035/pexels-photo-4239035.jpeg?_gl=1*ys34jl*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY4MTEkajU0JGwwJGgw">
+                                <img class="w18"
+                                    src="https://images.pexels.com/photos/4239037/pexels-photo-4239037.jpeg?_gl=1*1th2blh*_ga*OTQ2ODM5MTUxLjE3NTE3MjYxMDk.*_ga_8JE65Q40S6*czE3NTIzOTY2ODckbzMkZzEkdDE3NTIzOTY3MTQkajMzJGwwJGgw">
+                            </div>
+                            <!-- -------- -->
+                            <div class="ultra-hover-shield">
+                                <div class="elite-icon-cluster">
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="heart">❤️</div>
+                                    </a>
+                                    <div class="cart-hover">🛒</div>
+                                    <a href=" NEW-DETAILS.HTML" style="text-decoration: none">
+                                        <div class="view-hover" onclick="openModal()">👁️</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details6">
+                            <div class="brand7">KLEENORA</div>
+                            <div class="product-name8"> Wax Shiner</div>
+                            <div class="rating9">★★★★☆ <span>(189)</span></div>
+                            <div class="price10">Rs. 250 <del>Rs. 499</del> <span class="save11">Save Rs. 100</span>
+                            </div>
+                            <ul class="features12">
+                                <li>Marbless</li>
+                                <li>Gloss finish</li>
+                                <li>Non-toxic</li>
+                            </ul>
+                            <div class="mems" data-index12="5"></div>
+                            <button class="add-to-cart13" class="copy55">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="swiper-pagination "></div>
+        </div>
+    </label>
+    
+    </footer>
+   <div class="zenith-container">
+        <div class="aurora-header">
+            <div class="luminos-logo">K</div>
+            <h1 class="stellar-brand">KLEENORA <span class="nebula-tag">PREMIUM CLEANING</span></h1>
+            <p class="cosmic-info">Pakistan's most trusted cleaning brand. We provide premium quality cleaning products for household, automotive, and industrial use. Trusted by 50,000+ customers nationwide.</p>
+        </div>
+        <div class="orbit-nav">
+            <div class="galaxy-section">
+                <h3 class="nova-title">Quick Links</h3>
+                <ul class="constellation-list">
+                    <li><a href="./index.html" class="constellation-link">Home</a></li>
+                    <li><a href="./NEW-PRODUCTS.HTML" class="constellation-link">Shop</a></li>
+                    <li><a href="./NEW-PRODUCTS.HTML" class="constellation-link">Categories</a></li>
+                    <li><a href="./NEW-ABOUT.HTML" class="constellation-link">About Us</a></li>
+                    <li><a href="./NEW-CONTACT.HTML" class="constellation-link">Contact</a></li>
+                    <li><a href="#" class="constellation-link">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="galaxy-section">
+                <h3 class="nova-title">Customer Service</h3>
+                <ul class="constellation-list">
+                      <li>
+                <a  class="textddss" href="https://wa.me/+923011231236?text=How%20can%20I%20help%20you%20with%20your%20support%20query?" class="text-blue-600 hover:text-blue-800 underline">Help Center</a>
+            </li>
+            <li>
+                <a class="textddss" href="https://wa.me/+923011231236?text=How%20can%20I%20assist%20you%20with%20returns%20or%20exchanges?" class="text-blue-600 hover:text-blue-800 underline">Returns & Exchanges</a>
+            </li>
+            <li>
+                <a class="textddss" href="https://wa.me/+923011231236?text=How%20can%20I%20help%20you%20with%20shipping%20details?" class="text-blue-600 hover:text-blue-800 underline">Shipping Info</a>
+            </li>
+            <li>
+                <a class="textddss" href="https://wa.me/+923011231236?text=How%20can%20I%20assist%20you%20with%20size%20guidance?" class="text-blue-600 hover:text-blue-800 underline">Size Guide</a>
+            </li>
+            <li>
+                <a class="textddss" href="https://wa.me/+923011231236?text=How%20can%20I%20help%20you%20with%20care%20instructions?" class="text-blue-600 hover:text-blue-800 underline">Care Instructions</a>
+            </li>
+                </ul>
+            </div>
+        </div>
+        <div class="stellar-icons">
+            <div class="stellar-icon stellar-icon1"></div>
+            <div class="stellar-icon stellar-icon2"></div>
+            <div class="stellar-icon stellar-icon3"></div>
+            <div class="stellar-icon stellar-icon4"></div>
+        </div>
+        <div class="lunar-subscribe">
+            <div class="lunar-subscribe-icon">🌐</div>
+            <h2 class="solar-title">STAY UPDATED</h2>
+            <p class="comet-text">Get the latest offers and cleaning tips delivered to your inbox</p>
+            <form class="meteor-form">
+                <input type="email" placeholder="Enter your email" required class="meteor-input">
+                <button type="submit" class="meteor-btn">Subscribe</button>
+            </form>
+        </div>
+        <div class="celestial-footer">
+            <p class="celestial-footer-text">@KLEENORA ALL RIGHTS RESEVERD</p>
+            <a href="https://wa.me/923278890579?text=HEY%20I%20AM%20THE%20DEVELOPER%20OF%20KLEENORA%20IF%20YOU%20NEED%20ANY%20WEBSITE%20FOR%20YOUR%20BUSINESS%20JUST%20LEAVE%20ME%20A%20MESSAGE" class="celestial-footer-link">
+                <p class="celestial-footer-link-text">----> BY FASEE DEVELOPERS</p>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js">
+    </script>
+
+    <script>
+        document.getElementsByClassName("endss")[0].style.display="none"
+        document.addEventListener('DOMContentLoaded', function() {
+    // Handle clicks on thumbnail images (w16, w17, w18)
+    document.querySelectorAll('.w16, .w17, .w18').forEach(thumbnail => {
+        thumbnail.addEventListener('click', function() {
+            // Find the parent product card
+            const productCard = this.closest('.product-card1');
+            
+            // Find the main product image within this card
+            const mainImage = productCard.querySelector('.product-img');
+            
+            // Update the main image source
+            mainImage.src = this.src;
+            
+            // Optional: Add active class to clicked thumbnail and remove from siblings
+            const gallery = this.closest('.gallery5');
+            gallery.querySelectorAll('img').forEach(img => {
+                img.classList.remove('active-thumb');
+            });
+            this.classList.add('active-thumb');
+        });
+    });
+});
+        const topElement = document.getElementsByClassName("top")[0];
+        const ff = document.getElementsByClassName("nok")[0];
+
+        topElement.style.display = "none";
+        topElement.style.transition = "top 0.3s ease";
+
+
+        document.getElementsByClassName("nav-4")[0].addEventListener("click", () => {
+
+            topElement.style.top = "2%";
+            topElement.style.display = "block";
+            overlay.style.opacity = "0";
+
+
+
+        });
+
+
+        ff.addEventListener("click", () => {
+            topElement.style.top = "-1000%";
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const lolElement = document.getElementsByClassName("lol104")[0];
+            lolElement.style.background = "#00ff00";
+
+            const buttons = document.querySelectorAll('.stellarPulse');
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    lolElement.style.background = "white";
+                    buttons.forEach(btn => btn.classList.remove('clicked'));
+                    button.classList.add('clicked');
+                    lolElement.addEventListener("click", () => {
+                        lolElement.style.background = "#00ff00";
+                    })
+                });
+            });
+        });
+        // Popup Interactions
+        function closeQuantumCartBox() {
+            const QuantumCartBox = document.getElementById('QuantumCartBox');
+            const overlay = document.getElementById('VoidOverlay');
+            QuantumCartBox.classList.add('ZenithFade');
+            overlay.classList.remove('active');
+            setTimeout(() => {
+                QuantumCartBox.style.display = 'none';
+            }, 400);
+        }
+
+        function continueLunarShop() {
+            closeQuantumCartBox();
+        }
+
+        function goToGalacticCart() {
+          
+            closeQuantumCartBox();
+        }
+        function launchConfetti() {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.5 },
+                colors: ['#00ff00', '#00aaff', '#ffffff']
+            });
+        }
+        // Keyboard Navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeQuantumCartBox();
+        });
+        // ---------------calling things
+      document.querySelector(".bestone").style.transition = "top 0.5s ease";
+document.querySelector(".bestone").style.top = "-1000px"
+Array.from(document.querySelectorAll(".mems")).forEach(e => {
+    e.addEventListener("click", () => {
+        document.querySelector(".bestone").style.top = "1px"
+        const QuantumCartBox = document.getElementById('QuantumCartBox');
+        const overlay = document.getElementsByClassName('VoidOverlay');
+        QuantumCartBox.style.display = 'flex';
+        QuantumCartBox.classList.remove('ZenithFade');
+        launchConfetti()
+        setTimeout(() => {
+            document.querySelector(".bestone").style.top = "-1000px"
+
+        }, 8000)
+    })
+})
+
+
+        Array.from(document.getElementsByClassName("eye-button4")).forEach(e => {
+            e.addEventListener("click", () => {
+                const index = e.getAttribute("data-indexs");
+
+                localStorage.setItem("Dynamic-Pages", JSON.stringify({
+                    pic4: document.getElementsByClassName("product-img")[index].src,
+                    price: document.getElementsByClassName("price10")[index].innerHTML.split("<del>")[0],
+                    off: document.getElementsByClassName("price10")[index].lastElementChild.innerHTML.split("Rs.")[1],
+                    // Store options as an array instead of HTML string
+                    options: [
+                        document.getElementsByClassName("features12")[index].children[0]?.innerHTML || options[0],
+                        document.getElementsByClassName("features12")[index].children[1]?.innerHTML || options[1],
+                        document.getElementsByClassName("features12")[index].children[2]?.innerHTML || options[2]
+                    ],
+                    name: document.getElementsByClassName("product-name8")[index].innerHTML,
+                    pic1: document.getElementsByClassName("w16")[index].src,
+                    pic2: document.getElementsByClassName("w17")[index].src,
+                    pic3: document.getElementsByClassName("w18")[index].src,
+                    // Fix background-image access
+
+                }));
+
+            });
+        });
+
+    // ====== GLOBAL VARIABLES ====== //
+// ====== SAFE CART INITIALIZATION ====== //
+const countElement = document.querySelector(".numCircle");
+let cartItems = [];
+let totalPrice = 0;
+
+// Load cart from localStorage on page load
+document.addEventListener('DOMContentLoaded', () => {
+  try {
+    const savedCart = localStorage.getItem('cartItems');
+    const savedTotal = localStorage.getItem('totalPrice');
+    if (savedCart) {
+      cartItems = JSON.parse(savedCart);
+      totalPrice = parseInt(savedTotal) || 0;
+      if (!Array.isArray(cartItems)) cartItems = [];
+      cartItems.forEach(item => {
+        if (item.id && item.name && item.price && item.img) {
+          renderCartItem(item);
+        }
+      });
+      updateCart();
+    }
+  } catch (error) {
+    console.error('Error loading cart:', error);
+    cartItems = [];
+    totalPrice = 0;
+    updateCart();
+  }
+});
+
+// ====== CART INTERACTIONS ====== //
+document.querySelector('.addwala-div').addEventListener('click', (e) => {
+  const actionBtn = e.target.closest('.nebulaPulse-unique, .solarFlare-unique');
+  if (!actionBtn) return;
+
+  const itemId = actionBtn.closest('.carting')?.id.split('-')[2];
+  const item = document.getElementById(`cart-item-${itemId}`);
+  if (!item) return;
+
+  try {
+    // Remove Item
+    if (actionBtn.classList.contains('solarFlare-unique')) {
+      item.remove();
+      cartItems = cartItems.filter(cartItem => cartItem.id !== parseInt(itemId));
+      saveCart();
+      updateCart();
+      return;
+    }
+
+    // Quantity Change
+    const quantityEl = item.querySelector('.lunarEcho-unique');
+    let quantity = parseInt(quantityEl.textContent) || 1;
+    const priceEl = item.querySelector('.n23');
+    const unitPrice = parseInt(priceEl.dataset.unitPrice) || 0;
+
+    if (actionBtn.textContent === '+') {
+      quantity++;
+    } else if (actionBtn.textContent === '-' && quantity > 1) {
+      quantity--;
+    }
+
+    quantityEl.textContent = quantity;
+    priceEl.textContent = `₨${unitPrice * quantity}`;
+
+    // Update quantity in cartItems
+    const cartItem = cartItems.find(ci => ci.id === parseInt(itemId));
+    if (cartItem) {
+      cartItem.quantity = quantity;
+    }
+    saveCart();
+    updateCart();
+  } catch (error) {
+    console.error('Error updating cart:', error);
+    updateCart();
+  }
+});
+
+// ====== ADD ITEMS ====== //
+document.querySelectorAll(".mems").forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    try {
+      const productElements = {
+        img: document.querySelectorAll('.product-img')[index],
+        name: document.querySelectorAll(".product-name8")[index],
+        price: document.querySelectorAll(".price10")[index]
+      };
+
+      if (!productElements.img || !productElements.name || !productElements.price) {
+        throw new Error('Product data missing');
+      }
+
+      const product = {
+        id: Date.now(),
+        img: productElements.img.src.trim(),
+        name: productElements.name.innerHTML.trim(),
+        price: parseInt(productElements.price.innerHTML.split("<del>")[0].replace(/[^\d]/g, '')) || 0,
+        quantity: 1
+      };
+
+      if (!product.img || !product.name || product.price <= 0) {
+        throw new Error('Invalid product data');
+      }
+      cartItems.push(product);
+      renderCartItem(product);
+      saveCart();
+      updateCart();
+      document.querySelector(".awe").style.display = "none";
+      document.querySelector(".endss").style.display = "block";
+    } catch (error) {
+      console.error('Error adding item:', error);
+    }
+  });
+});
+
+// ====== RENDER CART ITEM ====== //
+function renderCartItem(product) {
+  try {
+    if (!document.querySelector(".addwala-div")) {
+      throw new Error('Cart container missing');
+    }
+    document.querySelector(".addwala-div").insertAdjacentHTML('beforeend', `
+      <div class="carting" id="cart-item-${product.id}">
+        <div class="cont">
+          <div class="side">
+            <div class="image1">
+              <img class="rt" src="${product.img}" alt="${product.name}">
+            </div>
+            <div class="image2">
+              <h3 class="n21">${product.name}</h3>
+              <h3 class="n23" data-unit-price="${product.price}">₨${product.price * (product.quantity || 1)}</h3>
+              <div class="zephyrHub-unique">
+                <button class="nebulaPulse-unique">-</button>
+                <span class="lunarEcho-unique">${product.quantity || 1}</span>
+                <button class="nebulaPulse-unique">+</button>
+                <button class="solarFlare-unique">×</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `);
+  } catch (error) {
+    console.error('Error rendering cart item:', error);
+  }
+}
+
+// ====== UPDATE CART & CALCULATE TOTAL ====== //
+function updateCart() {
+  try {
+    const items = document.querySelectorAll('.carting');
+    let totalItems = cartItems.length; // Count unique items
+    totalPrice = 0;
+    items.forEach(item => {
+      const qty = parseInt(item.querySelector('.lunarEcho-unique').textContent) || 1;
+      const price = parseInt(item.querySelector('.n23').dataset.unitPrice) || 0;
+      totalPrice += qty * price;
+    });
+
+    // Update UI
+    if (countElement) {
+      countElement.textContent = totalItems;
+    }
+    const stellarCartDetails = document.querySelector(".StellarCartDetails");
+    if (stellarCartDetails) {
+      stellarCartDetails.innerHTML = `(${totalItems}) ITEMS | ₨${totalPrice} TOTAL`;
+    }
+
+    // Update Total Display
+    let totalElement = document.querySelector('.total');
+    if (!totalElement) {
+      totalElement = document.createElement('div');
+      totalElement.className = 'total';
+      document.querySelector(".addwala-div").appendChild(totalElement);
+    }
+    totalElement.innerHTML = `Total: Rs. ${totalPrice}`;
+
+    // Update empty cart message
+    const aweElement = document.querySelector(".awe");
+    if (aweElement) {
+      aweElement.style.display = totalItems === 0 ? "block" : "none";
+    }
+
+    // Update .endss display
+    const endssElement = document.querySelector(".endss");
+    if (endssElement) {
+      endssElement.style.display = totalItems === 0 ? "none" : "block";
+    }
+
+    // Save to localStorage
+    saveCart();
+  } catch (error) {
+    console.error('Error updating cart UI:', error);
+  }
+}
+
+// ====== SAVE CART TO LOCALSTORAGE ====== //
+function saveCart() {
+  try {
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    localStorage.setItem('totalPrice', totalPrice);
+  } catch (error) {
+    console.error('Error saving cart:', error);
+  }
+}
+
+// ====== TOGGLE CART VISIBILITY ====== //
+const cartToggle = document.querySelector(".OrbitAction.GalacticCart");
+if (cartToggle) {
+  cartToggle.addEventListener("click", () => {
+    try {
+      const topEl = document.querySelector(".top");
+      if (topEl) {
+        topEl.style.display = "block";
+        topEl.style.top = "2%";
+      }
+    } catch (error) {
+      console.error('Error toggling cart visibility:', error);
+    }
+  });
+}
+
+// ------------
+        document.getElementById("checkout-btn").addEventListener("click", function () {
+
+            localStorage.setItem("cart", JSON.stringify(cart));
+            window.location.href = " NEW-CHECKOUT.HTML";
+        });
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + "</span>";
+                },
+            },
+        });
+
+      document.querySelector(".bestone").style.transition = "top 0.5s ease";
+document.querySelector(".bestone").style.top = "-1000px"
+Array.from(document.querySelectorAll(".mems")).forEach(e => {
+    e.addEventListener("click", () => {
+        document.querySelector(".bestone").style.top = "1px"
+        const QuantumCartBox = document.getElementById('QuantumCartBox');
+        const overlay = document.getElementsByClassName('VoidOverlay');
+        QuantumCartBox.style.display = 'flex';
+        QuantumCartBox.classList.remove('ZenithFade');
+        launchConfetti()
+        setTimeout(() => {
+            document.querySelector(".bestone").style.top = "-1000px"
+
+        }, 5000)
+    })
+})
+
+document.querySelectorAll(".cart-hover").forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    try {
+      const productElements = {
+        img: document.querySelectorAll('.product-img')[index],
+        name: document.querySelectorAll(".product-name8")[index],
+        price: document.querySelectorAll(".price10")[index]
+      };
+
+      if (!productElements.img || !productElements.name || !productElements.price) {
+        throw new Error('Product data missing');
+      }
+
+      const product = {
+        id: Date.now(),
+        img: productElements.img.src.trim(),
+        name: productElements.name.innerHTML.trim(),
+        price: parseInt(productElements.price.innerHTML.split("<del>")[0].replace(/[^\d]/g, '')) || 0,
+        quantity: 1
+      };
+
+      if (!product.img || !product.name || product.price <= 0) {
+        throw new Error('Invalid product data');
+      }
+
+      cartItems.push(product);
+      renderCartItem(product);
+      saveCart();
+      updateCart();
+      document.querySelector(".awe").style.display = "none";
+    } catch (error) {
+      console.error('Error adding item via cart-hover:', error);
+    }
+  });
+});
+
+document.querySelector(".bestone").style.transition = "top 0.5s ease";
+document.querySelector(".bestone").style.top = "-1000px"
+Array.from(document.querySelectorAll(".cart-hover")).forEach(e => {
+  e.addEventListener("click", () => {
+    document.querySelector(".bestone").style.top = "1px"
+    const QuantumCartBox = document.getElementById('QuantumCartBox');
+    const overlay = document.getElementsByClassName('VoidOverlay');
+    QuantumCartBox.style.display = 'flex';
+    QuantumCartBox.classList.remove('ZenithFade');
+    launchConfetti()
+    setTimeout(() => {
+      document.querySelector(".bestone").style.top = "-1000px"
+
+    }, 5000)
+  })
+})
+
+function toggleSlideMenu() {
+            const slideMenu = document.getElementById('lolSlideMenu');
+            const isActive = slideMenu.classList.toggle('active');
+            slideMenu.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+            if (isActive) {
+                slideMenu.querySelector('.lol-nav-link').focus();
+                if (navigator.vibrate) navigator.vibrate(50);
+            }
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            const slideMenu = document.getElementById('lolSlideMenu');
+            const hamburger = document.querySelector('.lol-hamburger');
+            if (!slideMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                slideMenu.classList.remove('active');
+                slideMenu.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Close menu with Escape key and handle keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            const slideMenu = document.getElementById('lolSlideMenu');
+            if (e.key === 'Escape' && slideMenu.classList.contains('active')) {
+                slideMenu.classList.remove('active');
+                slideMenu.setAttribute('aria-expanded', 'false');
+                document.querySelector('.lol-hamburger').focus();
+                if (navigator.vibrate) navigator.vibrate(30);
+            }
+        });
+
+        // Trap focus within menu
+        const slideMenu = document.getElementById('lolSlideMenu');
+        const focusableElements = slideMenu.querySelectorAll('a');
+        const firstFocusable = focusableElements[0];
+        const lastFocusable = focusableElements[focusableElements.length - 1];
+
+        slideMenu.addEventListener('keydown', (e) => {
+            if (!slideMenu.classList.contains('active')) return;
+            if (e.key === 'Tab') {
+                if (e.shiftKey && document.activeElement === firstFocusable) {
+                    e.preventDefault();
+                    lastFocusable.focus();
+                } else if (!e.shiftKey && document.activeElement === lastFocusable) {
+                    e.preventDefault();
+                    firstFocusable.focus();
+                }
+            }
+        });
+
+        // Preload images for smooth loading
+        const imageLinks = ['pic-12.jpg', 'pic-13.png', 'pi-13.jpg', 'pic-14.jpg'];
+        imageLinks.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+
+        // Add touch feedback for mobile devices
+        document.querySelector('.lol-hamburger').addEventListener('touchstart', () => {
+            document.querySelector('.lol-hamburger').style.transform = 'perspective(800px) rotateY(5deg) scale(1.1)';
+        });
+
+        document.querySelector('.lol-hamburger').addEventListener('touchend', () => {
+            document.querySelector('.lol-hamburger').style.transform = 'perspective(800px) rotateY(0deg) scale(1)';
+        });
+
+        // Dynamic cursor effect for desktop
+        document.querySelectorAll('.lol-nav-item').forEach(item => {
+            item.addEventListener('mousemove', (e) => {
+                const rect = item.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                item.style.setProperty('--mouse-x', `${x}px`);
+                item.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body>
+
+</html>

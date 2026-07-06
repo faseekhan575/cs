@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="NEW-PROJECT.CSS">
+</head>
+<style>
+   * {
+    box-sizing: border-box;
+}
+
+.nono {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 90%;
+}
+
+@media (max-width: 768px) {
+    .nono {
+        margin: 20px auto;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nono {
+        margin: 15px auto;
+        padding: 10px;
+    }
+}
+
+.about {
+    color: #00ff00;
+    font-size: clamp(2rem, 6vw, 3rem);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pak {
+    color: #333;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    text-align: center;
+    max-width: 600px;
+}
+
+.ki {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .ki {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 15px;
+    }
+}
+
+.hello {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.hello2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 255, 102, 0.1);
+    border: 2px solid #00cc00;
+    width: 100%;
+    max-width: 500px;
+    min-height: 300px;
+}
+
+@media (max-width: 768px) {
+    .hello,
+    .hello2 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .hello2 {
+        padding: 20px;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hello2 {
+        padding: 15px;
+        margin: 15px auto;
+    }
+}
+
+.nn1 {
+    color: #00ff00;
+    font-family: 'Arial', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.l1 {
+    color: #e6e6e6;
+    font-family: 'Arial', sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    margin: 15px 0;
+    padding-left: 30px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.l1::before {
+    content: '✓';
+    color: #00ff00;
+    position: absolute;
+    left: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.l1:hover {
+    color: #00ff00;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+    .nn1 {
+        font-size: clamp(1.5rem, 3.5vw, 1.8rem);
+    }
+    .l1 {
+        font-size: clamp(0.9rem, 2vw, 1rem);
+        padding-left: 25px;
+    }
+}
+
+.green {
+    color: #00ff00;
+}
+
+.black {
+    color: #333;
+}
+
+.zXyqP9kLmN {
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #00ff00;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    margin-bottom: 20px;
+}
+
+.vBcR7jKzOp {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tUvW8mNxPq {
+    background-color: #2e2e2e;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.tUvW8mNxPq:hover {
+    transform: scale(1.05);
+}
+
+.wXyZ9kLmNo {
+    background-color: #00ff00;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.wXyZ9kLmNo img {
+    width: 40px;
+    height: 40px;
+}
+
+h2 {
+    color: #00ff00;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    margin-bottom: 10px;
+}
+
+p {
+    color: #a9a9a9;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .vBcR7jKzOp {
+        gap: 15px;
+    }
+    .tUvW8mNxPq {
+        max-width: 200px;
+        padding: 15px;
+    }
+    .wXyZ9kLmNo {
+        width: 50px;
+        height: 50px;
+    }
+    .wXyZ9kLmNo img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .zXyqP9kLmN {
+        padding: 15px;
+    }
+    .tUvW8mNxPq {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+.cleanit-box {
+    background-color: #00ff00;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.cleanit-header {
+    font-size: clamp(1.8rem, 4vw, 2rem);
+    margin-bottom: 20px;
+}
+
+.cleanit-metrics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cleanit-item {
+    flex: 1;
+    min-width: 100px;
+    max-width: 200px;
+}
+
+.cleanit-value {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    margin-bottom: 10px;
+}
+
+.cleanit-label {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    color: #e0e0e0;
+}
+
+.cleanit-star {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+@media (max-width: 768px) {
+    .cleanit-box {
+        padding: 15px;
+        margin: 15px auto;
+    }
+    .cleanit-header {
+        font-size: clamp(1.5rem, 3.5vw, 1.8rem);
+    }
+    .cleanit-metrics {
+        gap: 15px;
+    }
+    .cleanit-item {
+        min-width: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cleanit-box {
+        padding: 10px;
+    }
+    .cleanit-value {
+        font-size: clamp(1.8rem, 4vw, 2rem);
+    }
+}
+
+
+
+.nitro {
+    display: flex;
+    flex-direction: column;
+}
+  .whatsapp-btn{
+    height: 46px;
+}
+
+</style>
+
+<body>
+    <div class="navbar">
+     <ul>
+            <a class="loll"
+                href="https://wa.me/923278890579?text=HEY%20I%20AM%20THE%20DEVELOPER%20OF%20KLEENORA%20IF%20YOU%20NEED%20ANY%20WEBSITE%20FOR%20YOUR%20BUSINESS%20JUST%20LEAVE%20ME%20A%20MESSAGE">
+                <li><img class="nav-2 navone" src="navbar.png" alt=""></li>
+            </a>
+            <li><img class="nav-1 w00" src="pic-12.jpg" alt=""></li>
+            <a class="loll" href="./index.html">
+                <li class="whites w00">home</li>
+            </a>
+            <li><img class="nav-1 loll " src="pic-13.png" alt=""></li>
+            <a class="loll" href="index.html#flex-section">
+                <li class="whites ">products</li>
+            </a>
+            <li><img class="nav-1 loll w00" src="pi-13.jpg" alt="" srcset=""></li>
+            <a class="loll" href="./NEW-ABOUT.HTML">
+                <li class="whites w00 ">about</li>
+            </a>
+            <li><img class="nav-1 loll w00" src="pic-14.jpg" alt="" srcset=""></li>
+            <a class="loll nn3" href="./NEW-CONTACT.HTML">
+                <li class="whites nn w00">contact us</li>
+            </a>
+            <img class="nav-4"
+                    src="https://png.pngtree.com/element_our/20190531/ourmid/pngtree-shopping-cart-convenient-icon-image_1287807.jpg"
+                    alt="">
+
+
+                     <div class="lol-hamburger" onclick="toggleSlideMenu()" tabindex="0" role="button" aria-label="Toggle navigation menu">
+        <img class="ham" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AAADPz89LS0uWlpb39/eCgoKQkJCxsbH29vZiYmI4ODh0dHTX19empqbFxcXr6+sQEBDh4eEbGxu7u7s0NDR6enpXV1egoKDJyclvb28ODg6IiIhcXFwfHx8ZGRnwNjATAAACZUlEQVR4nO3dCW7CMBCFYRdIw75vbSm9/y2rqKgUVRo72NJoxv93gveUkGBj7BAAAAAAAAAAAAAAAAAAoAKrdjq0Y9qu+tVbH1/sOa7TC7baYZ/UJvZrZtpJnzZrkgputHNm2KRUPGinzHKIF3zVzpjpNVZwq50w2zbScKodMNtULjjRzlfARGw41o5XwFhsONeOV8BcbGj3ZX83Extqpyui8oY77XQFXMWGJ+14BZzEhlbHTX/JY6iBdrwCFmJDD48auWBYaufLtow0NP803cUKhoV2xEyRT6H9+zR6j3bO2ikznFMKhrDSzvm05GnhxuYgap40l3izHlmbcpuNekx53y7kdmDHts/lAwAAAAAAAAAAxjRvy5Edy7e+P1zsh9q/JfU23PfoN7hqx33KdZBa0O5i9ugy9h+f2jkzfKYUfNdOmeU9XtD6Sm95lXfwsFhfXqofwkU7YLZLpKF2vgLkgnYXC93Jy4bsvgrv5JeivS9r/w3Fhh/a8QrYiA210xVR+TX0/zn0/yz1/z708KiRC1bwvdT+2CI6JeV+fFjBGL+CeRrLT5vEubYK5kuD/znvjvffLQAAAAAAAAAAgCHO94myt9fXoddeXxOj+7XFFkD/srtsKHHPPff7Jrrf+9L//qVf2hEzRfegtX2PdmL3qXa+AuSC/vfz9r8nu/999a3v5t2Rn6ba6YqovKH/c2ZsDpseyWcFWV/l3ZFXettfqh/9I7D7c9cqODvP/H+7EhazW5tke5RwhmVoLI+Bk84h9X+WbLA7hko9DzhUcKZzx/m53AAAAAAAAAAAAAAAAABg0zfn21Nf0tdOJAAAAABJRU5ErkJggg==" alt="Hamburger Icon">
+    </div>
+
+    <!-- Slide-in Navigation -->
+    <div class="lol-slide-menu" id="lolSlideMenu" role="navigation" aria-label="Main navigation" aria-expanded="false">
+        <ul class="lol-nav-list">
+            <li class="lol-nav-item" style="--item-index: 1;">
+                <img class="lol-nav-img lol-img-home" src="pic-12.jpg" alt="Home Icon">
+                <a class="lol-nav-link lol-home" href="./index.html">Home</a>
+            </li>
+            <li class="lol-nav-item" style="--item-index: 2;">
+                <img class="lol-nav-img lol-img-products" src="pic-13.png" alt="Products Icon">
+                <a class="lol-nav-link lol-products" href="index.html#flex-section">Products</a>
+            </li>
+            <li class="lol-nav-item" style="--item-index: 3;">
+                <img class="lol-nav-img lol-img-about" src="pi-13.jpg" alt="About Icon">
+                <a class="lol-nav-link lol-about" href="./NEW-ABOUT.HTML">About</a>
+            </li>
+            <li class="lol-nav-item" style="--item-index: 4;">
+                <img class="lol-nav-img lol-img-contact" src="pic-14.jpg" alt="Contact Icon">
+                <a class="lol-nav-link lol-contact" href="./NEW-CONTACT.HTML">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+               
+                    <div class="numCircle">0</div>
+               
+          
+        </ul>
+        <!-- ---------------paster -->
+        <div class="swipers">
+            <div class="top">
+                <!-- ---warp firts -->
+                <div class="cartBadge-custom">
+                    Shopping Cart (1)
+                    <span class="cartClose-custom nok">×</span>
+                </div>
+                <!-- ---------down one -->
+                <div class="endss">
+                    <div class="containeree">
+                        <div class="total">Total: Rs. 2,002</div>
+                        <a href="./NEW-CHECKOUT.HTML"> <button
+                                class="checkout-btn">Checkout</button></a>
+                    </div>
+                </div>
+                <!-- -----now -->
+                <div class="addwala-div">
+                     <div class="awe">
+            <svg class="cart-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+            </svg>
+            <p class="awe1">Your shopping cart is empty.</p>
+        </div>
+                    <!-- <div class="carting">
+                        <div class="cont">
+                            <div class="side">
+                                <div class="image1">
+                                    <img class="rt"
+                                        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                        alt="" srcset="">
+
+                                </div>
+                                <div class="image2">
+                                    <h3 class="n21">marble cleaner</h3>
+                                    <h3 class="n23">RS 300</h3>
+                                    <div class="zephyrHub-unique">
+                                        <button class="nebulaPulse-unique">-</button>
+                                        <span class="lunarEcho-unique">1</span>
+                                        <button class="nebulaPulse-unique">+</button>
+                                        <button class="solarFlare-unique">×</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- ---------------copy -->
+                    <!-- <div class="carting">
+                        <div class="cont">
+                            <div class="side">
+                                <div class="image1">
+                                    <img class="rt"
+                                        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                        alt="" srcset="">
+
+                                </div>
+                                <div class="image2">
+                                    <h3 class="n21">marble cleaner</h3>
+                                    <h3 class="n23">RS 300</h3>
+                                    <div class="zephyrHub-unique">
+                                        <button class="nebulaPulse-unique">-</button>
+                                        <span class="lunarEcho-unique">1</span>
+                                        <button class="nebulaPulse-unique">+</button>
+                                        <button class="solarFlare-unique">×</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- -------------------paste -->
+                    <!-- <div class="carting">
+                        <div class="cont">
+                            <div class="side">
+                                <div class="image1">
+                                    <img class="rt"
+                                        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                        alt="" srcset="">
+
+                                </div>
+                                <div class="image2">
+                                    <h3 class="n21">marble cleaner</h3>
+                                    <h3 class="n23">RS 300</h3>
+                                    <div class="zephyrHub-unique">
+                                        <button class="nebulaPulse-unique">-</button>
+                                        <span class="lunarEcho-unique">1</span>
+                                        <button class="nebulaPulse-unique">+</button>
+                                        <button class="solarFlare-unique">×</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- //bapp wala div -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="new122">
+        <a href="https://wa.me/923011231236?text=Hey%21%20What%20do%20you%20want%20to%20buy%20from%20Kellenora%3F%20Check%20out%20our%20products%3A%0A-%20All%20Products%20🌟%0A-%20Floor%20Care%20🧹%0A-%20House%2FOffice%2FSchool%20Care%20🏠%0A-%20Laundry%20Care%20🧺%0A-%20Kitchen%20Care%20🍳%0A-%20Toilet%20Care%20🚽%0A-%20Special%20Products%20🎉%0A-%20Personal%20Care%20🧴" class="whatsapp-btn"><img src="pic-17.png" alt="WhatsApp Icon"><span>Chat
+                with us</span></a>
+    </div>
+    <main>
+        <div class="nono">
+            <h1 class="about">About KLEENORA</h1>
+            <P class="pak">Pakistan's leading provider of premium cleaning solutions, trusted by over 50,000 customers
+                nationwide.</P>
+        </div>
+    </main>
+   
+    <div class="ki">
+        <div class="hello">
+            <h1 class="green">OUR STORY</h1>
+            <p class="black">Founded in 2020, CleanIt Store began with a simple mission: to provide Pakistani households
+                and businesses with access to world-class cleaning products that deliver exceptional results while being
+                safe for families and the environment.
+
+                What started as a small family business has grown into Pakistan's most trusted cleaning brand, serving
+                customers from Karachi to Lahore, Islamabad to Peshawar, and everywhere in between.
+
+                Today, we're proud to offer over 100 premium cleaning products across household, automotive, and
+                industrial categories, all backed by our commitment to quality and customer satisfaction.</p>
+        </div>
+        <div class="hello2">
+            <h1 class="nn1">Why Choose KLEENORA?</h1>
+            <ul class="nitro">
+                <li class="l1">Premium quality products from trusted manufacturers</li>
+                <li class="l1">Fast delivery across Pakistan</li>
+                <li class="l1">100% satisfaction guarantee</li>
+                <li class="l1">24/7 customer support</li>
+                <li class="l1">Competitive prices with regular discounts</li>
+            </ul>
+        </div>
+    </div>
+    <div class="zXyqP9kLmN">
+        <h1>Our Values</h1>
+        <div class="vBcR7jKzOp">
+            <div class="tUvW8mNxPq">
+                <div class="wXyZ9kLmNo"><img src="https://img.icons8.com/ios-filled/50/000000/star.png"
+                        alt="Quality Icon"></div>
+                <h2>Quality First</h2>
+                <p>We source only the highest quality products that meet international standards and deliver exceptional
+                    results.</p>
+            </div>
+            <div class="tUvW8mNxPq">
+                <div class="wXyZ9kLmNo"><img src="https://img.icons8.com/ios-filled/50/000000/leaf.png"
+                        alt="Eco-Friendly Icon"></div>
+                <h2>Eco-Friendly</h2>
+                <p>We prioritize environmentally responsible products that are safe for your family and the planet.</p>
+            </div>
+            <div class="tUvW8mNxPq ">
+                <div class="wXyZ9kLmNo"><img src="https://img.icons8.com/ios-filled/50/000000/star.png"></div>
+                <h2>Customer Care</h2>
+                <p>Your satisfaction is our priority. We're here to help you find the perfect cleaning solution for
+                    every need.</p>
+            </div>
+        </div>
+    </div>
+    <div class="cleanit-box" id="statsContainer">
+        <div class="cleanit-header">CleanIt by the Numbers</div>
+        <div class="cleanit-metrics">
+            <div class="cleanit-item">
+                <div class="cleanit-value" data-target="50000">0</div>
+                <div class="cleanit-label">Happy Customers</div>
+            </div>
+            <div class="cleanit-item">
+                <div class="cleanit-value" data-target="100">0</div>
+                <div class="cleanit-label">Products</div>
+            </div>
+            <div class="cleanit-item">
+                <div class="cleanit-value" data-target="50">0</div>
+                <div class="cleanit-label">Cities Served</div>
+            </div>
+            <div class="cleanit-item">
+                <div class="cleanit-value" data-target="4.8">0<span class="cleanit-star">★</span></div>
+                <div class="cleanit-label">Average Rating</div>
+            </div>
+        </div>
+    </div>
+    <div class="zenith-container">
+        <div class="aurora-header">
+            <div class="luminos-logo">K</div>
+            <h1 class="stellar-brand">KLEENORA <span class="nebula-tag">PREMIUM CLEANING</span></h1>
+            <p class="cosmic-info">Pakistan's most trusted cleaning brand. We provide premium quality cleaning products for household, automotive, and industrial use. Trusted by 50,000+ customers nationwide.</p>
+        </div>
+        <div class="orbit-nav">
+            <div class="galaxy-section">
+                <h3 class="nova-title">Quick Links</h3>
+                <ul class="constellation-list">
+                    <li><a href="./index.html" class="constellation-link">Home</a></li>
+                    <li><a href="index.html#flex-section" class="constellation-link">Shop</a></li>
+                    <li><a href="index.html#flex-section" class="constellation-link">Categories</a></li>
+                    <li><a href="./NEW-ABOUT.HTML" class="constellation-link">About Us</a></li>
+                    <li><a href="./NEW-CONTACT.HTML" class="constellation-link">Contact</a></li>
+                    <li><a href="#" class="constellation-link">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="galaxy-section">
+                <h3 class="nova-title">Customer Service</h3>
+                <ul class="constellation-list">
+                      <li>
+                <a  class="textddss" href="https://wa.me/+923011231236?text=How%20can%20I%20help%20you%20with%20your%20support%20query?" class="text-blue-600 hover:text-blue-800 underline">Help Center</a>
+            </li>
+            <li>
+                <a class="textddss" href="https://wa.me/+923011231236?text=How%20can%20I%20assist%20you%20with%20returns%20or%20exchanges?" class="text-blue-600 hover:text-blue-800 underline">Returns & Exchanges</a>
+            </li>
+            <li>
+                <a class="textddss" href="https://wa.me/+923011231236?text=How%20can%20I%20help%20you%20with%20shipping%20details?" class="text-blue-600 hover:text-blue-800 underline">Shipping Info</a>
+            </li>
+            <li>
+                <a class="textddss" href="https://wa.me/+923011231236?text=How%20can%20I%20assist%20you%20with%20size%20guidance?" class="text-blue-600 hover:text-blue-800 underline">Size Guide</a>
+            </li>
+            <li>
+                <a class="textddss" href="https://wa.me/+923011231236?text=How%20can%20I%20help%20you%20with%20care%20instructions?" class="text-blue-600 hover:text-blue-800 underline">Care Instructions</a>
+            </li>
+                </ul>
+            </div>
+        </div>
+        <div class="stellar-icons">
+            <div class="stellar-icon stellar-icon1"></div>
+            <div class="stellar-icon stellar-icon2"></div>
+            <div class="stellar-icon stellar-icon3"></div>
+            <div class="stellar-icon stellar-icon4"></div>
+        </div>
+        <div class="lunar-subscribe">
+            <div class="lunar-subscribe-icon">🌐</div>
+            <h2 class="solar-title">STAY UPDATED</h2>
+            <p class="comet-text">Get the latest offers and cleaning tips delivered to your inbox</p>
+            <form class="meteor-form">
+                <input type="email" placeholder="Enter your email" required class="meteor-input">
+                <button type="submit" class="meteor-btn">Subscribe</button>
+            </form>
+        </div>
+        <div class="celestial-footer">
+            <p class="celestial-footer-text">@KLEENORA ALL RIGHTS RESEVERD</p>
+            <a href="https://wa.me/923278890579?text=HEY%20I%20AM%20THE%20DEVELOPER%20OF%20KLEENORA%20IF%20YOU%20NEED%20ANY%20WEBSITE%20FOR%20YOUR%20BUSINESS%20JUST%20LEAVE%20ME%20A%20MESSAGE" class="celestial-footer-link">
+                <p class="celestial-footer-link-text">----> BY FASEE DEVELOPERS</p>
+            </a>
+        </div>
+    </div>
+    <script>
+        // Counter animation logic
+        let hasAnimated = false;
+
+        function isInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function animateCount() {
+            if (hasAnimated) return; // Prevent re-animation
+
+            const statsContainer = document.getElementById('statsContainer');
+            if (!isInViewport(statsContainer)) return;
+
+            hasAnimated = true; // Mark as animated
+            const numbers = document.querySelectorAll('.cleanit-value');
+            numbers.forEach(number => {
+                const target = +number.getAttribute('data-target');
+                const duration = 1000; // 1 second
+                const increment = target / (duration / 16); // ~60fps
+                let start = 0;
+
+                function updateCount() {
+                    start += increment;
+                    if (start < target) {
+                        number.textContent = Math.ceil(start);
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        number.textContent = target + (number.innerHTML.includes('★') ? '★' : '');
+                    }
+                }
+                requestAnimationFrame(updateCount);
+            });
+        }
+
+        // Only trigger on scroll
+        window.addEventListener('scroll', () => {
+            if (!hasAnimated) {
+                animateCount();
+            }
+        });
+
+        // Cart functionality
+        const topElement = document.getElementsByClassName("top")[0];
+        const ff = document.getElementsByClassName("nok")[0];
+
+        topElement.style.display = "none";
+        topElement.style.transition = "top 0.3s ease";
+
+        document.getElementsByClassName("nav-4")[0].addEventListener("click", () => {
+            topElement.style.top = "2%";
+            topElement.style.display = "block";
+        });
+
+        ff.addEventListener("click", () => {
+            topElement.style.top = "-1000%";
+        });
+
+        const countElement = document.querySelector(".numCircle");
+        let cartItems = [];
+        let totalPrice = 0;
+
+        // Load cart from localStorage on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            try {
+                const savedCart = localStorage.getItem('cartItems');
+                const savedTotal = localStorage.getItem('totalPrice');
+                if (savedCart) {
+                    cartItems = JSON.parse(savedCart);
+                    totalPrice = parseInt(savedTotal) || 0;
+                    if (!Array.isArray(cartItems)) cartItems = [];
+                    cartItems.forEach(item => {
+                        if (item.id && item.name && item.price && item.img) {
+                            renderCartItem(item);
+                        }
+                    });
+                    updateCart();
+                }
+            } catch (error) {
+                console.error('Error loading cart:', error);
+                cartItems = [];
+                totalPrice = 0;
+                updateCart();
+            }
+        });
+
+        // ====== CART INTERACTIONS ====== //
+        document.querySelector('.addwala-div').addEventListener('click', (e) => {
+            const actionBtn = e.target.closest('.nebulaPulse-unique, .solarFlare-unique');
+            if (!actionBtn) return;
+
+            const itemId = actionBtn.closest('.carting')?.id.split('-')[2];
+            const item = document.getElementById(`cart-item-${itemId}`);
+            if (!item) return;
+
+            try {
+                // Remove Item
+                if (actionBtn.classList.contains('solarFlare-unique')) {
+                    item.remove();
+                    cartItems = cartItems.filter(cartItem => cartItem.id !== parseInt(itemId));
+                    saveCart();
+                    updateCart();
+                    return;
+                }
+
+                // Quantity Change
+                const quantityEl = item.querySelector('.lunarEcho-unique');
+                let quantity = parseInt(quantityEl.textContent) || 1;
+                const priceEl = item.querySelector('.n23');
+                const unitPrice = parseInt(priceEl.dataset.unitPrice) || 0;
+
+                if (actionBtn.textContent === '+') {
+                    quantity++;
+                } else if (actionBtn.textContent === '-' && quantity > 1) {
+                    quantity--;
+                }
+
+                quantityEl.textContent = quantity;
+                priceEl.textContent = `₨${unitPrice * quantity}`;
+
+                // Update quantity in cartItems
+                const cartItem = cartItems.find(ci => ci.id === parseInt(itemId));
+                if (cartItem) {
+                    cartItem.quantity = quantity;
+                }
+                saveCart();
+                updateCart();
+            } catch (error) {
+                console.error('Error updating cart:', error);
+                updateCart();
+            }
+        });
+
+        // ====== ADD ITEMS ====== //
+        document.querySelectorAll(".mems").forEach((btn, index) => {
+            btn.addEventListener("click", () => {
+                try {
+                    const productElements = {
+                        img: document.querySelectorAll('.product-img')[index],
+                        name: document.querySelectorAll(".product-name8")[index],
+                        price: document.querySelectorAll(".price10")[index]
+                    };
+
+                    if (!productElements.img || !productElements.name || !productElements.price) {
+                        throw new Error('Product data missing');
+                    }
+
+                    const product = {
+                        id: Date.now(),
+                        img: productElements.img.src.trim(),
+                        name: productElements.name.innerHTML.trim(),
+                        price: parseInt(productElements.price.innerHTML.split("<del>")[0].replace(/[^\d]/g, '')) || 0,
+                        quantity: 1
+                    };
+
+                    if (!product.img || !product.name || product.price <= 0) {
+                        throw new Error('Invalid product data');
+                    }
+
+                    cartItems.push(product);
+                    renderCartItem(product);
+                    saveCart();
+                    updateCart();
+                    document.querySelector(".awe").style.display = "none";
+                } catch (error) {
+                    console.error('Error adding item:', error);
+                }
+            });
+        });
+
+        // ====== RENDER CART ITEM ====== //
+        function renderCartItem(product) {
+            try {
+                if (!document.querySelector(".addwala-div")) {
+                    throw new Error('Cart container missing');
+                }
+                document.querySelector(".addwala-div").insertAdjacentHTML('beforeend', `
+                    <div class="carting" id="cart-item-${product.id}">
+                        <div class="cont">
+                            <div class="side">
+                                <div class="image1">
+                                    <img class="rt" src="${product.img}" alt="${product.name}">
+                                </div>
+                                <div class="image2">
+                                    <h3 class="n21">${product.name}</h3>
+                                    <h3 class="n23" data-unit-price="${product.price}">₨${product.price * (product.quantity || 1)}</h3>
+                                    <div class="zephyrHub-unique">
+                                        <button class="nebulaPulse-unique">-</button>
+                                        <span class="lunarEcho-unique">${product.quantity || 1}</span>
+                                        <button class="nebulaPulse-unique">+</button>
+                                        <button class="solarFlare-unique">×</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `);
+            } catch (error) {
+                console.error('Error rendering cart item:', error);
+            }
+        }
+
+        // ====== UPDATE CART & CALCULATE TOTAL ====== //
+        function updateCart() {
+            try {
+                const items = document.querySelectorAll('.carting');
+                let totalItems = cartItems.length; // Count unique items
+                totalPrice = 0;
+
+                items.forEach(item => {
+                    const qty = parseInt(item.querySelector('.lunarEcho-unique').textContent) || 1;
+                    const price = parseInt(item.querySelector('.n23').dataset.unitPrice) || 0;
+                    totalPrice += qty * price;
+                });
+
+                // Update UI
+                if (countElement) {
+                    countElement.textContent = totalItems;
+                }
+                const stellarCartDetails = document.querySelector(".StellarCartDetails");
+                if (stellarCartDetails) {
+                    stellarCartDetails.innerHTML = `(${totalItems}) ITEMS | ₨${totalPrice} TOTAL`;
+                }
+                
+                // Update Total Display
+                let totalElement = document.querySelector('.total');
+                if (!totalElement) {
+                    totalElement = document.createElement('div');
+                    totalElement.className = 'total';
+                    document.querySelector(".addwala-div").appendChild(totalElement);
+                }
+                totalElement.innerHTML = `Total: Rs. ${totalPrice}`;
+
+                // Update empty cart message
+                const aweElement = document.querySelector(".awe");
+                if (aweElement) {
+                    aweElement.style.display = totalItems === 0 ? "block" : "none";
+                }
+
+                // Save to localStorage
+                saveCart();
+            } catch (error) {
+                console.error('Error updating cart UI:', error);
+            }
+        }
+
+        // ====== SAVE CART TO LOCALSTORAGE ====== //
+        function saveCart() {
+            try {
+                localStorage.setItem('cartItems', JSON.stringify(cartItems));
+                localStorage.setItem('totalPrice', totalPrice);
+            } catch (error) {
+                console.error('Error saving cart:', error);
+            }
+        }
+
+        // ====== TOGGLE CART VISIBILITY ====== //
+        const cartToggle = document.querySelector(".OrbitAction.GalacticCart");
+        if (cartToggle) {
+            cartToggle.addEventListener("click", () => {
+                try {
+                    const topEl = document.querySelector(".topElement");
+                    if (topEl) {
+                        topEl.style.display = "block";
+                        topEl.style.top = "2%";
+                    }
+                } catch (error) {
+                    console.error('Error toggling cart visibility:', error);
+                }
+            });
+        }
+        
+
+function toggleSlideMenu() {
+            const slideMenu = document.getElementById('lolSlideMenu');
+            const isActive = slideMenu.classList.toggle('active');
+            slideMenu.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+            if (isActive) {
+                slideMenu.querySelector('.lol-nav-link').focus();
+                if (navigator.vibrate) navigator.vibrate(50);
+            }
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            const slideMenu = document.getElementById('lolSlideMenu');
+            const hamburger = document.querySelector('.lol-hamburger');
+            if (!slideMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                slideMenu.classList.remove('active');
+                slideMenu.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Close menu with Escape key and handle keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            const slideMenu = document.getElementById('lolSlideMenu');
+            if (e.key === 'Escape' && slideMenu.classList.contains('active')) {
+                slideMenu.classList.remove('active');
+                slideMenu.setAttribute('aria-expanded', 'false');
+                document.querySelector('.lol-hamburger').focus();
+                if (navigator.vibrate) navigator.vibrate(30);
+            }
+        });
+
+        // Trap focus within menu
+        const slideMenu = document.getElementById('lolSlideMenu');
+        const focusableElements = slideMenu.querySelectorAll('a');
+        const firstFocusable = focusableElements[0];
+        const lastFocusable = focusableElements[focusableElements.length - 1];
+
+        slideMenu.addEventListener('keydown', (e) => {
+            if (!slideMenu.classList.contains('active')) return;
+            if (e.key === 'Tab') {
+                if (e.shiftKey && document.activeElement === firstFocusable) {
+                    e.preventDefault();
+                    lastFocusable.focus();
+                } else if (!e.shiftKey && document.activeElement === lastFocusable) {
+                    e.preventDefault();
+                    firstFocusable.focus();
+                }
+            }
+        });
+
+        // Preload images for smooth loading
+        const imageLinks = ['pic-12.jpg', 'pic-13.png', 'pi-13.jpg', 'pic-14.jpg'];
+        imageLinks.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+
+        // Add touch feedback for mobile devices
+        document.querySelector('.lol-hamburger').addEventListener('touchstart', () => {
+            document.querySelector('.lol-hamburger').style.transform = 'perspective(800px) rotateY(5deg) scale(1.1)';
+        });
+
+        document.querySelector('.lol-hamburger').addEventListener('touchend', () => {
+            document.querySelector('.lol-hamburger').style.transform = 'perspective(800px) rotateY(0deg) scale(1)';
+        });
+
+        // Dynamic cursor effect for desktop
+        document.querySelectorAll('.lol-nav-item').forEach(item => {
+            item.addEventListener('mousemove', (e) => {
+                const rect = item.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                item.style.setProperty('--mouse-x', `${x}px`);
+                item.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

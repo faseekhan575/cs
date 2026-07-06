@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLEENORA</title>
+    <link rel="stylesheet" href="NEW-PROJECT.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+
+
+    <div class="navbar">
+        <ul>
+            <a class="loll"
+                href="https://wa.me/923278890579?text=HEY%20I%20AM%20THE%20DEVELOPER%20OF%20KLEENORA%20IF%20YOU%20NEED%20ANY%20WEBSITE%20FOR%20YOUR%20BUSINESS%20JUST%20LEAVE%20ME%20A%20MESSAGE">
+                <li><img class="nav-2 navone" src="navbar.png" alt=""></li>
+            </a>
+            <li><img class="nav-1 w00" src="pic-12.jpg" alt=""></li>
+            <a class="loll" href="./index.html">
+                <li class="whites w00">home</li>
+            </a>
+            <li><img class="nav-1 loll " src="pic-13.png" alt=""></li>
+            <a class="loll" href="index.html#flex-section">
+                <li class="whites ">products</li>
+            </a>
+            <li><img class="nav-1 loll w00" src="pi-13.jpg" alt="" srcset=""></li>
+
+            <a class="loll" href="./NEW-ABOUT.HTML">
+                <li class="whites w00  ">about</li>
+            </a>
+            </a>
+            <li><img class="nav-1 loll w00" src="pic-14.jpg" alt="" srcset=""></li>
+            <a class="loll nn3" href="./NEW-CONTACT.HTML">
+                <li class="whites nn w00">contact us</li>
+            </a>
+
+
+            <img class="mams" src="local.png" alt="mams" onclick="toggleSearch()">
+
+            <!-- Top-down search overlay -->
+            <div class="kio">
+                <div class="search-slide" id="searchSlide">
+                    <div class="search-slide-box" id="searchBox">
+                        <li class="search-container search-special">
+                            <input type="text" id="productSearch" placeholder="SEARCH ANY ITEM"
+                                onkeyup="showSuggestions(this.value)">
+                            <ul id="suggestions"></ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="search-container nigro">
+
+                <input type="text" id="productSearch" placeholder="Search..." onkeyup="showSuggestions(this.value)">
+                <ul id="suggestions"></ul>
+            </div>
+
+
+            <img class="nav-4" src="newcart.png" alt="">
+
+
+            <div class="lol-hamburger" onclick="toggleSlideMenu()" tabindex="0" role="button"
+                aria-label="Toggle navigation menu">
+                <img class="ham"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AAADPz89LS0uWlpb39/eCgoKQkJCxsbH29vZiYmI4ODh0dHTX19empqbFxcXr6+sQEBDh4eEbGxu7u7s0NDR6enpXV1egoKDJyclvb28ODg6IiIhcXFwfHx8ZGRnwNjATAAACZUlEQVR4nO3dCW7CMBCFYRdIw75vbSm9/y2rqKgUVRo72NJoxv93gveUkGBj7BAAAAAAAAAAAAAAAAAAoAKrdjq0Y9qu+tVbH1/sOa7TC7baYZ/UJvZrZtpJnzZrkgputHNm2KRUPGinzHKIF3zVzpjpNVZwq50w2zbScKodMNtULjjRzlfARGw41o5XwFhsONeOV8BcbGj3ZX83Extqpyui8oY77XQFXMWGJ+14BZzEhlbHTX/JY6iBdrwCFmJDD48auWBYaufLtow0NP803cUKhoV2xEyRT6H9+zR6j3bO2ikznFMKhrDSzvm05GnhxuYgap40l3izHlmbcpuNekx53y7kdmDHts/lAwAAAAAAAAAAxjRvy5Edy7e+P1zsh9q/JfU23PfoN7hqx33KdZBa0O5i9ugy9h+f2jkzfKYUfNdOmeU9XtD6Sm95lXfwsFhfXqofwkU7YLZLpKF2vgLkgnYXC93Jy4bsvgrv5JeivS9r/w3Fhh/a8QrYiA210xVR+TX0/zn0/yz1/z708KiRC1bwvdT+2CI6JeV+fFjBGL+CeRrLT5vEubYK5kuD/znvjvffLQAAAAAAAAAAgCHO94myt9fXoddeXxOj+7XFFkD/srtsKHHPPff7Jrrf+9L//qVf2hEzRfegtX2PdmL3qXa+AuSC/vfz9r8nu/999a3v5t2Rn6ba6YqovKH/c2ZsDpseyWcFWV/l3ZFXettfqh/9I7D7c9cqODvP/H+7EhazW5tke5RwhmVoLI+Bk84h9X+WbLA7hko9DzhUcKZzx/m53AAAAAAAAAAAAAAAAABg0zfn21Nf0tdOJAAAAABJRU5ErkJggg=="
+                    alt="Hamburger Icon">
+            </div>
+
+            <!-- Slide-in Navigation -->
+            <div class="lol-slide-menu" id="lolSlideMenu" role="navigation" aria-label="Main navigation"
+                aria-expanded="false">
+
+
+                <li class="search-container search-special">
+                    <input type="text" id="productSearch" placeholder="SEARCH ANY ITEM"
+                        onkeyup="showSuggestions(this.value)">
+                    <ul id="suggestions"></ul>
+                </li>
+
+
+                <ul class="lol-nav-list">
+                    <li class="lol-nav-item" style="--item-index: 1;">
+                        <img class="lol-nav-img lol-img-home" src="pic-12.jpg" alt="Home Icon">
+                        <a class="lol-nav-link lol-home" href="./index.html">Home</a>
+                    </li>
+                    <li class="lol-nav-item" style="--item-index: 2;">
+                        <img class="lol-nav-img lol-img-products" src="pic-13.png" alt="Products Icon">
+                        <a class="lol-nav-link lol-products" href="index.html#flex-section">Products</a>
+                    </li>
+                    <li class="lol-nav-item" style="--item-index: 3;">
+                        <img class="lol-nav-img lol-img-about" src="pi-13.jpg" alt="About Icon">
+                        <a class="lol-nav-link lol-about" href="./NEW-ABOUT.HTML">About</a>
+                    </li>
+                    <li class="lol-nav-item" style="--item-index: 4;">
+                        <img class="lol-nav-img lol-img-contact" src="pic-14.jpg" alt="Contact Icon">
+                        <a class="lol-nav-link lol-contact" href="./NEW-CONTACT.HTML">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="numCircle">0</div>
+
+
+        </ul>
+        <!-- ------animations -->
+        <div class="bestone">
+            <canvas id="CosmicSparkles"></canvas>
+
+
+            <div class="moeez">
+                <div class="QuantumCartBox" id="QuantumCartBox" role="dialog" aria-labelledby="NebulaMessage">
+                    <button class="CelestialClose" onclick="closeQuantumCartBox()" aria-label="Close popup">✖</button>
+                    <div class="AstralCheckIcon" aria-hidden="true">✔</div>
+                    <div class="NebulaMessage" id="NebulaMessage">Item added to your cart</div>
+                    <div class="StellarCartDetails">4 ITEMS IN THE CART ($692.95)</div>
+                    <div class="CosmicButtonRow">
+                        <button class="OrbitAction LunarShop" onclick="continueLunarShop()">CONTINUE SHOPPING</button>
+                        <button class="OrbitAction GalacticCart" onclick="goToGalacticCart()">GO TO THE CART</button>
+                    </div>
+                    <div class="AstroShippingNote">FREE SHIPPING OVER 4000 RUPPES ORDER</div>
+                    <div class="NovaProgressTrack" role="progressbar" aria-valuenow="91.5" aria-valuemin="0"
+                        aria-valuemax="100">
+                        <div class="NovaProgressFill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------aniamtions -->
+        <div class="swipers">
+            <div class="top">
+                <!-- ---warp firts -->
+                <div class="cartBadge-custom">
+                    Shopping Cart (1)
+                    <span class="cartClose-custom nok">×</span>
+                </div>
+                <!-- ---------down one -->
+                <div class="endss">
+                    <div class="containeree">
+                        <div class="total">Total: Rs. {total}</div>
+                        <a href="NEW-CHECKOUT.HTML"> <button class="checkout-btn">Checkout</button></a>
+                    </div>
+                </div>
+                <!-- -----now -->
+                <div class="addwala-div">
+                    <div class="awe">
+                        <svg class="cart-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                        </svg>
+                        <p class="awe1">Your shopping cart is empty.</p>
+                    </div>
+
+                    <!-- <div class="carting">
+                            <div class="cont">
+                                <div class="side">
+                                    <div class="image1">
+                                        <img class="rt"
+                                            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                            alt="" srcset="">
+
+                                    </div>
+                                    <div class="image2">
+                                        <h3 class="n21">marble cleaner</h3>
+                                        <h3 class="n23">RS 300</h3>
+                                        <div class="zephyrHub-unique">
+                                            <button class="nebulaPulse-unique">-</button>
+                                            <span class="lunarEcho-unique">1</span>
+                                            <button class="nebulaPulse-unique">+</button>
+                                            <button class="solarFlare-unique">×</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    <!-- ---------------copy -->
+                    <!-- <div class="carting">
+                            <div class="cont">
+                                <div class="side">
+                                    <div class="image1">
+                                        <img class="rt"
+                                            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                            alt="" srcset="">
+
+                                    </div>
+                                    <div class="image2">
+                                        <h3 class="n21">marble cleaner</h3>
+                                        <h3 class="n23">RS 300</h3>
+                                        <div class="zephyrHub-unique">
+                                            <button class="nebulaPulse-unique">-</button>
+                                            <span class="lunarEcho-unique">1</span>
+                                            <button class="nebulaPulse-unique">+</button>
+                                            <button class="solarFlare-unique">×</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    <!-- < -------------------paste -->
+                    <!-- <div class="carting">
+                            <div class="cont">
+                                <div class="side">
+                                    <div class="image1">
+                                        <img class="rt"
+                                            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                            alt="" srcset="">
+
+                                    </div>
+                                    <div class="image2">
+                                        <h3 class="n21">marble cleaner</h3>
+                                        <h3 class="n23">RS 300</h3>
+                                        <div class="zephyrHub-unique">
+                                            <button class="nebulaPulse-unique">-</button>
+                                            <span class="lunarEcho-unique">1</span>
+                                            <button class="nebulaPulse-unique">+</button>
+                                            <button class="solarFlare-unique">×</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    <!-- //bapp wala div -->
+                    <!-- addwala-div---- -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------swipers -->
+    <main class="kleenoraPrimeVortex">
+        <div class="sparkleCanvas">
+            <div class="shadowVeil"></div>
+            <div class="carouselOrbs"></div>
+            <div class="radianceCore">
+                <div class="prestigeCrest">
+                    <div class="emblemBeacon">P</div>
+                    <span class="text">Pakistan's #1 Cleaning Brand</span>
+                </div>
+                <!-- <div class="brandEclipse">KLEENORA</div> -->
+                <img class="yesplz" src="navbar.png" alt="" srcset="">
+                <h1 class="cleanSovereign">Cleaning Solutions</h1>
+                <p class="shineMantra">Transform your space with our professional-grade cleaning products.</p>
+                <p class="shineMantra">Trusted by 50,000+ customers across Pakistan</p>
+                <div class="actionPortal">
+                    <a href="index.html#flex-section"> <button class="pulseTrigger marketSurge">🛒 Shop Now</button></a>
+                    <a
+                        href="https://wa.me/923011231236?text=Hey%21%20What%20do%20you%20want%20to%20buy%20from%20Kellenora%3F%20Check%20out%20our%20products%3A%0A-%20All%20Products%20🌟%0A-%20Floor%20Care%20🧹%0A-%20House%2FOffice%2FSchool%20Care%20🏠%0A-%20Laundry%20Care%20🧺%0A-%20Kitchen%20Care%20🍳%0A-%20Toilet%20Care%20🚽%0A-%20Special%20Products%20🎉%0A-%20Personal%20Care%20🧴">
+                        <button class="pulseTrigger connectWave">📱 Contact Us</button></a>
+                </div>
+                <div class="triumphStats">
+                    <div>50K+ Happy Customers</div>
+                    <div>100+ Products</div>
+                    <div>24/7 Support</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <header>
+        <div class="parent">
+            <h1>OUR PRODUCTS</h1>
+            <h3>Find the perfect cleaning solution for every part of your home</h3>
+
+        </div>
+        <div class="new122">
+            <a href="https://wa.me/923011231236?text=Hey%21%20What%20do%20you%20want%20to%20buy%20from%20Kellenora%3F%20Check%20out%20our%20products%3A%0A-%20All%20Products%20🌟%0A-%20Floor%20Care%20🧹%0A-%20House%2FOffice%2FSchool%20Care%20🏠%0A-%20Laundry%20Care%20🧺%0A-%20Kitchen%20Care%20🍳%0A-%20Toilet%20Care%20🚽%0A-%20Special%20Products%20🎉%0A-%20Personal%20Care%20🧴"
+                class="whatsapp-btn"><img src="pic-17.png" alt="WhatsApp Icon"><span>Chat with us</span></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="fasee-galaxy-hub">
+            <a class="fasee-link-orbit" href="index.html#flex-section">
+                <div class="fasee-neon-pod">
+                    <img src="https://cdn-icons-png.flaticon.com/128/8728/8728237.png" alt="All Products Icon">
+                    <h3>All Products</h3>
+                    <p>Browse our complete range of cleaning products</p>
+                    <span></span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+            <a class="fasee-link-orbit" href="index.html#kitchens">
+                <div class="fasee-neon-pod">
+                    <img src="https://cdn-icons-png.flaticon.com/128/16997/16997117.png" alt="Kitchen Icon">
+                    <h3>Kitchen Care</h3>
+                    <p>Specialized kitchen cleaning products</p>
+                    <span></span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+            <a class="fasee-link-orbit" href="index.html#flex-section">
+                <div class="fasee-neon-pod">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2203/2203644.png" alt="Toilet Icon">
+                    <h3>Toilet Care</h3>
+                    <p>Bathroom and toilet cleaning essentials</p>
+                    <span></span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+            <a class="fasee-link-orbit" href="index.html#flex-section">
+                <div class="fasee-neon-pod">
+                    <img src="https://cdn-icons-png.flaticon.com/128/679/679821.png" alt="Special Icon">
+                    <h3>Special Products</h3>
+                    <p>Specialized cleaning solutions</p>
+                    <span></span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+            <a class="fasee-link-orbit" href="index.html#ok">
+                <div class="fasee-neon-pod">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1430/1430484.png" alt="Personal Care Icon">
+                    <h3>Personal Care</h3>
+                    <p>Hand care and sanitization products</p>
+                    <span></span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+            <a class="fasee-link-orbit" href="index.html#floor">
+                <div class="fasee-neon-pod">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2946/2946701.png" alt="Floor Care Icon">
+                    <h3>Floor Care</h3>
+                    <p>Professional floor cleaning and maintenance</p>
+                    <span></span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+            <a class="fasee-link-orbit" href="index.html#flex-section">
+                <div class="fasee-neon-pod">
+                    <img src="https://cdn-icons-png.flaticon.com/128/14717/14717435.png" alt="House Care Icon">
+                    <h3>House/School Care</h3>
+                    <p>Essential cleaning supplies for all spaces</p>
+                    <span></span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+            <a class="fasee-link-orbit" href="index.html#fll">
+                <div class="fasee-neon-pod">
+                    <img src="https://cdn-icons-png.flaticon.com/128/18985/18985990.png" alt="Laundry Care Icon">
+                    <h3>Laundry Care</h3>
+                    <p>Complete laundry and fabric care solutions</p>
+                    <span></span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <section>
+        <div>
+            <div class="parent">
+                <h1>Featured Products</h1>
+                <h3>Discover KLEENORA premium range—powerful, eco-friendly solutions for a spotless home</h3>
+            </div>
+        </div>
+    </section>
+
+
+ <label>
+    <div class="flex" id="flex-section">
+      <!-- CARD 1 -->
+      <div class="product-card1" id="ok">
+        <div class="product-image2 w14 lol0" id="main-product-image15">
+          <img class="product-img" src="hand.jfif" alt="">
+          <div class="discount-tag3">20% Off</div>
+        
+            <div class="eye-button4" data-indexs1="0">👁️</div>
+        
+          <div class="ultra-hover-shield">
+            <div class="elite-icon-cluster">
+              <div class="cart-hover">🛒</div>
+              <div data-index="0" class="view-hover">👁️</div>
+            </div>
+          </div>
+          <div class="gallery5">
+            <img class="w16" src="hand.jfif">
+            <img class="w17" src="hand1.jfif">
+          </div>
+        </div>
+        <div class="product-details6">
+          <div class="brand7">KLEENORA</div>
+          <div class="product-name8">HAND WASH</div>
+          <div class="rating9">★★★★ <span>(5 stars)</span></div>
+          <div class="price10">Rs. 450 <del>Rs. 550</del></div>
+          <ul class="features12">
+            <li class="moeezbro">Germ Kill</li>
+            <li class="moeezbro">Soft Skin</li>
+            <li class="moeezbro">Mild Clean</li>
+          </ul>
+          <div class="mems" data-index="0"></div>
+          <button class="add-to-cart13 los1 copy55">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="product-card1">
+        <div class="product-image2 w14 lol0" id="main-product-image15">
+          <img class="product-img" src="lemon.jfif" alt="" srcset="">
+          <div class="discount-tag3">20% Off</div>
+          
+            <div class="eye-button4" data-indexs1="1">👁️</div>
+        
+          <div class="ultra-hover-shield">
+            <div class="elite-icon-cluster">
+              <div class="cart-hover">🛒</div>
+              <div data-index="1" class="view-hover" onclick="openModal()">👁️</div>
+            </div>
+          </div>
+          <div class="gallery5">
+            <img class="w16" src="lemon.jfif">
+            <img class="w17" src="dish1.jfif">
+          </div>
+        </div>
+        <div class="product-details6">
+          <div class="brand7">KLEENORA</div>
+          <div class="product-name8">DISH WASHER</div>
+          <div class="rating9">★★★★ <span>(5 stars)</span></div>
+          <div class="price10">Rs. 425 <del>Rs. 525</del></div>
+          <ul class="features12">
+            <li class="moeezbro">stain proof</li>
+            <li class="moeezbro">Gloss finish</li>
+            <li class="moeezbro">human touchable</li>
+          </ul>
+          <div class="mems" data-index="1"></div>
+          <button class="add-to-cart13 copy55">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="product-card1" id="fll">
+        <div class="product-image2 w14" id="main-product-image15">
+          <img class="product-img" src="luxury.jpg">
+          <div class="discount-tag3">20% Off</div>
+       
+            <div class="eye-button4" data-indexs1="2">👁️</div>
+       
+          <div class="ultra-hover-shield">
+            <div class="elite-icon-cluster">
+              <div class="cart-hover">🛒</div>
+              <div data-index="2" class="view-hover" onclick="openModal()">👁️</div>
+            </div>
+          </div>
+          <div class="gallery5">
+            <img class="w16" src="luxury.jpg">
+            <img class="w17" src="l1.jfif">
+          </div>
+        </div>
+        <div class="product-details6">
+          <div class="brand7">KLEENORA</div>
+          <div class="product-name8">Luxury Detergent</div>
+          <div class="rating9">★★★★☆ <span>(5 stars)</span></div>
+          <div class="price10">Rs. 775 <del>Rs. 885</del></div>
+          <ul class="features12">
+            <li class="moeezbro">Fabric Guard</li>
+            <li class="moeezbro">Skin Safe</li>
+            <li class="moeezbro">Non Toxic</li>
+          </ul>
+          <div class="mems" data-index="2"></div>
+          <button class="add-to-cart13 copy55">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="product-card1">
+        <div class="product-image2 w14" id="main-product-image15">
+          <img class="product-img" src="all.jfif">
+          <div class="discount-tag3">20% Off</div>
+        
+            <div class="eye-button4" data-indexs1="3">👁️</div>
+        
+          <div class="ultra-hover-shield">
+            <div class="elite-icon-cluster">
+              <div class="cart-hover7">🛒</div>
+              <div data-index="3" class="view-hover" onclick="openModal()">👁️</div>
+            </div>
+          </div>
+          <div class="gallery5">
+            <img class="w16" src="all.jfif">
+            <img class="w17" src="all1.jfif">
+          </div>
+        </div>
+        <div class="product-details6">
+          <div class="brand7">KLEENORA</div>
+          <div class="product-name8">ALL PURPOSE CLEANER</div>
+          <div class="rating9">★★★★☆ <span>(4.7stars)</span></div>
+          <div class="price10">Rs. 525 <del>Rs. 625</del></div>
+          <ul class="features12">
+            <li class="moeezbro">Surface Shield</li>
+            <li class="moeezbro">Shiny Coat</li>
+            <li class="moeezbro">Non Toxic</li>
+          </ul>
+          <div class="mems" data-index="3"></div>
+          <button class="add-to-cart13 copy55">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="product-card1" id="kitchens">
+        <div class="product-image2 w14" id="main-product-image15">
+          <img class="product-img" src="glass.jpg">
+          <div class="discount-tag3">20% Off</div>
+       
+            <div class="eye-button4" data-indexs1="4">👁️</div>
+        
+          <div class="ultra-hover-shield">
+            <div class="elite-icon-cluster">
+              <div class="cart-hover">🛒</div>
+              <div data-index="4" class="view-hover" onclick="openModal()">👁️</div>
+            </div>
+          </div>
+          <div class="gallery5">
+            <img class="w16" src="glass.jpg">
+            <img class="w17" src="glass1.jfif">
+          </div>
+        </div>
+        <div class="product-details6">
+          <div class="brand7">KLEENORA</div>
+          <div class="product-name8">GLASS CLEANER</div>
+          <div class="rating9">★★★★☆ <span>(4.7 stars)</span></div>
+          <div class="price10">Rs. 475 <del>Rs. 375</del></div>
+          <ul class="features12">
+            <li class="moeezbro">Streak Free</li>
+            <li class="moeezbro">Crystal Shine</li>
+            <li class="moeezbro">Non Toxic</li>
+          </ul>
+          <div class="mems" data-index="4"></div>
+          <button class="add-to-cart13 copy55">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="product-card1">
+        <div class="product-image2 w14" id="main-product-image15">
+          <img class="product-img" src="kitchen.jfif">
+          <div class="discount-tag3">20% Off</div>
+       
+            <div class="eye-button4" data-indexs1="5">👁️</div>
+       
+          <div class="ultra-hover-shield">
+            <div class="elite-icon-cluster">
+              <div class="cart-hover">🛒</div>
+              <div data-index="5" class="view-hover" onclick="openModal()">👁️</div>
+            </div>
+          </div>
+          <div class="gallery5">
+            <img class="w16" src="kitchen.jfif">
+            <img class="w17" src="l2.jfif">
+          </div>
+        </div>
+        <div class="product-details6">
+          <div class="brand7">KLEENORA</div>
+          <div class="product-name8">KITCHEN CLEANER</div>
+          <div class="rating9">★★★★☆ <span>(4.9 STARS)</span></div>
+          <div class="price10">Rs. 499 <del>Rs. 599</del></div>
+          <ul class="features12">
+            <li class="moeezbro">Grease Blast</li>
+            <li class="moeezbro">Sparkle Finish</li>
+            <li class="moeezbro">Non Toxic</li>
+          </ul>
+          <div class="mems" data-index="5"></div>
+          <button class="add-to-cart13 copy55">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="product-card1">
+        <div class="product-image2 w14" id="main-product-image15">
+          <img class="product-img" src="hob.jfif">
+          <div class="discount-tag3">20% Off</div>
+      
+            <div class="eye-button4" data-indexs1="6">👁️</div>
+     
+          <div class="ultra-hover-shield">
+            <div class="elite-icon-cluster">
+              <div class="cart-hover">🛒</div>
+              <div data-index="6" class="view-hover" onclick="openModal()">👁️</div>
+            </div>
+          </div>
+          <div class="gallery5">
+            <img class="w16" src="hob.jfif">
+            <img class="w17" src="l3.jfif">
+          </div>
+        </div>
+        <div class="product-details6">
+          <div class="brand7">KLEENORA</div>
+          <div class="product-name8">HOB/OVEN CLEANER</div>
+          <div class="rating9">★★★★☆ <span>(5 STAR)</span></div>
+          <div class="price10">Rs. 499 <del>Rs. 599</del></div>
+          <ul class="features12">
+            <li class="moeezbro">protection</li>
+            <li class="moeezbro">Gloss finish</li>
+            <li class="moeezbro">Non-toxic</li>
+          </ul>
+          <div class="mems" data-index="6"></div>
+          <button class="add-to-cart13 copy55">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- CARD 8 -->
+      <div class="product-card1" id="floor">
+        <div class="product-image2 w14" id="main-product-image15">
+          <img class="product-img" src="oud.jfif">
+          <div class="discount-tag3">20% Off</div>
+       
+            <div class="eye-button4" data-indexs1="7">👁️</div>
+   
+          <div class="ultra-hover-shield">
+            <div class="elite-icon-cluster">
+              <div class="cart-hover">🛒</div>
+              <div data-index="7" class="view-hover" onclick="openModal()">👁️</div>
+            </div>
+          </div>
+          <div class="gallery5">
+            <img class="w16" src="oud.jfif">
+            <img class="w17" src="allneed.jfif">
+          </div>
+        </div>
+        <div class="product-details6">
+          <div class="brand7">KLEENORA</div>
+          <div class="product-name8">FLOOR CLEANER (OUD)</div>
+          <div class="rating9">★★★★☆ <span>(4.6 STARS)</span></div>
+          <div class="price10">Rs. 475 <del>Rs. 575</del></div>
+          <ul class="features12">
+            <li class="moeezbro">Marble protection</li>
+            <li class="moeezbro">Gloss finish</li>
+            <li class="moeezbro">Non-toxic</li>
+          </ul>
+          <div class="mems" data-index="7"></div>
+          <button class="add-to-cart13 copy55">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- CARD 9 -->
+      <div class="product-card1">
+        <div class="product-image2 w14" id="main-product-image15">
+          <img class="product-img" src="nice.jfif">
+          <div class="discount-tag3">20% Off</div>
+          
+            <div class="eye-button4" data-indexs1="8">👁️</div>
+      
+          <div class="ultra-hover-shield">
+            <div class="elite-icon-cluster">
+              <div class="cart-hover">🛒</div>
+              <div data-index="8" class="view-hover" onclick="openModal()">👁️</div>
+            </div>
+          </div>
+          <div class="gallery5">
+            <img class="w16" src="nice.jfif">
+            <img class="w17" src="allneed.jfif">
+          </div>
+        </div>
+        <div class="product-details6">
+          <div class="brand7">KLEENORA</div>
+          <div class="product-name8">FLOOR CLEANER (🍋)</div>
+          <div class="rating9">★★★★☆ <span>(5 STARS)</span></div>
+          <div class="price10">Rs. 475 <del>Rs. 575</del></div>
+          <ul class="features12">
+            <li class="moeezbro">Marble protection</li>
+            <li class="moeezbro">Gloss finish</li>
+            <li class="moeezbro">Non-toxic</li>
+          </ul>
+          <div class="mems" data-index="8"></div>
+          
+          <button class="add-to-cart13 copy55">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </label>
+
+    <br><br><br><br><br><br><br><br><br>
+    <footer>
+        <div class="news">
+            <h1>WHY CHOOSE KLEENORA ?</h1>
+            <h4>We're committed to providing the best cleaning solutions for your home</h4>
+        </div>
+        <div class="flexWrapper">
+            <div class="panelBlock">
+                <div class="symbolCircle"></div>
+                <h2>Eco-Hero</h2>
+                <p>Products for a sustainable world</p>
+            </div>
+            <div class="panelBlock">
+                <div class="symbolCircle"></div>
+                <h2>Swift Clean</h2>
+                <p>Powerful cleaning formulas</p>
+            </div>
+            <div class="panelBlock">
+                <div class="symbolCircle"></div>
+                <h2>Trusted Guardian</h2>
+                <p>Safe for families everywhere</p>
+            </div>
+            <div class="panelBlock">
+                <div class="symbolCircle"></div>
+                <h2>Innovate Now</h2>
+                <p>Cutting-edge solutions for tomorrow</p>
+            </div>
+        </div>
+    </footer>
+    <div class="zenith-container">
+        <div class="aurora-header">
+            <div class="luminos-logo">K</div>
+            <h1 class="stellar-brand">KLEENORA <span class="nebula-tag">PREMIUM CLEANING</span></h1>
+            <p class="cosmic-info">Pakistan's most trusted cleaning brand. We provide premium quality cleaning products
+                for household, automotive, and industrial use. Trusted by 50,000+ customers nationwide.</p>
+        </div>
+        <div class="orbit-nav">
+            <div class="galaxy-section">
+                <h3 class="nova-title">Quick Links</h3>
+                <ul class="constellation-list">
+                    <li><a href="./index.html" class="constellation-link">Home</a></li>
+                    <li><a href="index.html#flex-section" class="constellation-link">Shop</a></li>
+                    <li><a href="index.html#flex-section" class="constellation-link">Categories</a></li>
+                    <li><a href="./NEW-ABOUT.HTML" class="constellation-link">About Us</a></li>
+                    <li><a href="./NEW-CONTACT.HTML" class="constellation-link">Contact</a></li>
+                    <li><a href="#" class="constellation-link">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="galaxy-section">
+                <h3 class="nova-title">Customer Service</h3>
+                <ul class="constellation-list">
+                    <li>
+                        <a class="textddss"
+                            href="https://wa.me/+923011231236?text=How%20can%20I%20help%20you%20with%20your%20support%20query?"
+                            class="text-blue-600 hover:text-blue-800 underline">Help Center</a>
+                    </li>
+                    <li>
+                        <a class="textddss"
+                            href="https://wa.me/+923011231236?text=How%20can%20I%20assist%20you%20with%20returns%20or%20exchanges?"
+                            class="text-blue-600 hover:text-blue-800 underline">Returns & Exchanges</a>
+                    </li>
+                    <li>
+                        <a class="textddss"
+                            href="https://wa.me/+923011231236?text=How%20can%20I%20help%20you%20with%20shipping%20details?"
+                            class="text-blue-600 hover:text-blue-800 underline">Shipping Info</a>
+                    </li>
+                    <li>
+                        <a class="textddss"
+                            href="https://wa.me/+923011231236?text=How%20can%20I%20assist%20you%20with%20size%20guidance?"
+                            class="text-blue-600 hover:text-blue-800 underline">Size Guide</a>
+                    </li>
+                    <li>
+                        <a class="textddss"
+                            href="https://wa.me/+923011231236?text=How%20can%20I%20help%20you%20with%20care%20instructions?"
+                            class="text-blue-600 hover:text-blue-800 underline">Care Instructions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="stellar-icons">
+            <div class="stellar-icon stellar-icon1"></div>
+            <div class="stellar-icon stellar-icon2"></div>
+            <div class="stellar-icon stellar-icon3"></div>
+            <div class="stellar-icon stellar-icon4"></div>
+        </div>
+        <div class="lunar-subscribe">
+            <div class="lunar-subscribe-icon">🌐</div>
+            <h2 class="solar-title">STAY UPDATED</h2>
+            <p class="comet-text">Get the latest offers and cleaning tips delivered to your inbox</p>
+            <form class="meteor-form">
+                <input type="email" placeholder="Enter your email" required class="meteor-input">
+                <button type="submit" class="meteor-btn">Subscribe</button>
+            </form>
+        </div>
+        <div class="celestial-footer">
+            <p class="celestial-footer-text">@KLEENORA ALL RIGHTS RESEVERD</p>
+            <a href="https://wa.me/923278890579?text=HEY%20I%20AM%20THE%20DEVELOPER%20OF%20KLEENORA%20IF%20YOU%20NEED%20ANY%20WEBSITE%20FOR%20YOUR%20BUSINESS%20JUST%20LEAVE%20ME%20A%20MESSAGE"
+                class="celestial-footer-link">
+                <p class="celestial-footer-link-text">----> BY FASEE DEVELOPERS</p>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js">
+    </script>
+    <script src="NEW-PROJECT.JS"></script>
+</body>
+
+</html>
